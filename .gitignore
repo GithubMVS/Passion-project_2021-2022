@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# fille with sensitive information about firebase
+secrets.json
