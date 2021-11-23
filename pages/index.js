@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="Passion Project" />
       </Head>
       <main>
-
+        <p>test</p>
       </main>
     </div>
   )
