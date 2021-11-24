@@ -9,6 +9,7 @@ export default function ThirdTest() {
   return (
     <div>
       <p>Dit zou ook op de server moeten runnen (test 3)</p>
+      <p>deze datum: {lastUpdateAt} runt op de server</p>
     </div>
   )
 }
