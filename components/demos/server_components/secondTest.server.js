@@ -1,22 +1,26 @@
 import React from 'react'
 
 export const testMessages = [
-  { id: 1, message: 'heyhoi', user: 'Bart' }, { id: 2, message: 'bruh', user: 'Thomas' }
+  { id: 1, message: 'heyhoi', user: 'Bart' }
 ]
 
-const secondTest = () => {
+const SecondTest = () => {
+
   return (
     <div>
-      {testMessages.map(message => {
-        <div key={message.id}>
-          <p>{message.id}</p>
-          <p>{message.message}</p>
-          <p>{message.user}</p>
-        </div>
+      <p>test server components</p>
 
-      })}
+      <div>
+        {testMessages.map(seperate => {
+          <li key={seperate.id}>
+            {seperate.message}
+          </li>
+        })}
+        <p>{testMessages.id}</p>
+      </div>
+
     </div>
   )
 }
 
-export default secondTest
+export default SecondTest

@@ -1,6 +1,7 @@
 import React from 'react'
 
-const firstTest = () => {
+const FirstTest = () => {
+  console.log("test")
   return (
     <div>
       <p>Dit rendered op de client</p>
@@ -8,4 +9,4 @@ const firstTest = () => {
   )
 }
 
-export default firstTest
+export default FirstTest
