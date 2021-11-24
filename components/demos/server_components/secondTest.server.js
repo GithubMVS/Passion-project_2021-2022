@@ -1,5 +1,3 @@
-import { fetch } from 'react-fetch'
-
 export default function SecondTest() {
 
   return (
