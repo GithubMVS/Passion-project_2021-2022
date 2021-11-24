@@ -1,26 +1,12 @@
-import React from 'react'
+import { fetch } from 'react-fetch'
 
-export const testMessages = [
-  { id: 1, message: 'heyhoi', user: 'Bart' }
-]
-
-const SecondTest = () => {
+export default function SecondTest() {
 
   return (
     <div>
-      <p>test server components</p>
-
-      <div>
-        {testMessages.map(seperate => {
-          <li key={seperate.id}>
-            {seperate.message}
-          </li>
-        })}
-        <p>{testMessages.id}</p>
-      </div>
-
+      <p>Dit runt op de server</p>
     </div>
   )
 }
 
-export default SecondTest
+    

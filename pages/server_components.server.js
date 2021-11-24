@@ -6,12 +6,14 @@ import ClientTest from '../components/demos/server_components/FirstTest.client'
 
 // server comonents imports
 import ServerTest from '../components/demos/server_components/SecondTest.server'
+import SecondServerTest from '../components/demos/server_components/ThirdTest'
 
 const server_components = () => {
   return (
     <div>
       <ClientTest />
       <ServerTest />
+      <SecondServerTest />
     </div>
   )
 }
