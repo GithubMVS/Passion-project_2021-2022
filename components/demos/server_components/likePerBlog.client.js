@@ -1,4 +1,4 @@
-export default function SecondTest() {
+export default function likePerBlog() {
 
   return (
     <div>
@@ -7,4 +7,4 @@ export default function SecondTest() {
   )
 }
 
-    
+

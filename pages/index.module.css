@@ -1,0 +1,74 @@
+.homepage__full {
+  padding: 0rem 20rem;
+  background-color: var(--backgroundColor);
+}
+
+.whatsNew__total {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.whatsNew_single {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* css of buttons */
+.links {
+  padding: 4rem 0rem;
+}
+
+.links_learnMore {
+  padding: 2rem 3rem;
+  color: var(--colorPurple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  border: .5rem solid var(--colorPurple);
+  border-radius: .5rem;
+  text-decoration: none;
+  margin-right: 3rem;
+}
+
+.links_demo {
+  padding: 2.5rem 3rem;
+  color: var(--backgroundColor);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: var(--colorPurple);
+  border-radius: .5rem;
+  text-decoration: none;
+}
+
+/* ... */
+
+.WhatsNew_title {
+  font-size: 5rem;
+  color: var(--colorBlack);
+  padding-bottom: 4rem;
+  font-weight: 700;
+}
+
+.WhatsNew_explenation {
+  font-size: 2rem;
+  color: var(--colorGrey);
+  padding-bottom: 5rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.benefits {}
+
+.benefit {
+  font-size: 2rem;
+  color: var(--colorGrey);
+  padding-bottom: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+}

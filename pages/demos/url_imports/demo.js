@@ -1,6 +1,5 @@
 import React from 'react'
 import confetti from 'https://cdn.skypack.dev/canvas-confetti'
-import { useEffect } from 'react'
 
 const demo = () => {
 
