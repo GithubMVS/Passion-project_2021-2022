@@ -6,7 +6,6 @@ import styles from '../pages/index.module.css'
 
 // component imports
 import Navigation from '../components/index/Navigation'
-import Video from '../components/index/Video'
 
 //image imports
 import checkMark from '../public/homePage/checkMark.svg'
@@ -33,11 +32,6 @@ export default function Home() {
         <section>
           <h1>First of all...</h1>
           <p>IT`S FAST</p>
-        </section>
-
-        <section>
-          <h1 className={styles.displayNone}>video</h1>
-          <Video />
         </section>
 
 

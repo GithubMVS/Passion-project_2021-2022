@@ -1,11 +1,11 @@
 import React from 'react'
 
-const demo = () => {
+const Demo = () => {
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default demo
+export default Demo
