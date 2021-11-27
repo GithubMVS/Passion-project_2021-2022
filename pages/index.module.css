@@ -24,7 +24,8 @@
 
 /* css of buttons */
 .links {
-  padding: 4rem 0rem;
+  padding: 4.5rem 0rem;
+  font-family: var(--font-family-Montreal);
 }
 
 .links_learnMore {
@@ -55,6 +56,7 @@
   color: var(--colorBlack);
   padding-bottom: 4rem;
   font-weight: 700;
+  font-family: var(--font-family-Montreal);
 }
 
 .WhatsNew_explenation {
@@ -63,6 +65,7 @@
   padding-bottom: 5rem;
   font-weight: 400;
   line-height: 3rem;
+  font-family: var(--font-family-Inter);
 }
 
 .benefits {
@@ -71,6 +74,7 @@
   grid-template-columns: 4rem auto;
   padding-bottom: 3rem;
   grid-row-gap: 2rem;
+  font-family: var(--font-family-Montreal);
 }
 
 .benefit {
