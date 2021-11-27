@@ -14,6 +14,8 @@
   grid-template-rows: 100%;
   justify-content: center;
   align-items: center;
+  padding: 14rem 0rem;
+  border-top: 0.1rem solid #C4C4C4;
 }
 
 .displayNone {
@@ -63,12 +65,17 @@
   line-height: 3rem;
 }
 
-.benefits {}
+.benefits {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 4rem auto;
+  padding-bottom: 3rem;
+  grid-row-gap: 2rem;
+}
 
 .benefit {
   font-size: 2rem;
-  color: var(--colorGrey);
-  padding-bottom: 3rem;
+  color: var(--colorBlack);
   font-weight: 700;
   line-height: 3rem;
 }

@@ -8,6 +8,8 @@ import styles from '../pages/index.module.css'
 import Navigation from '../components/index/Navigation'
 import Video from '../components/index/Video'
 
+//image imports
+import checkMark from '../public/homePage/checkMark.svg'
 
 
 
@@ -48,9 +50,9 @@ export default function Home() {
               <h1 className={styles.WhatsNew_title}>Middleware</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
-                <li className={styles.benefit}>good point one</li>
-                <li className={styles.benefit}>good point two</li>
-                <li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/middleware"><a className={styles.links_learnMore}>learn more</a></Link>
@@ -71,9 +73,9 @@ export default function Home() {
               <h1 className={styles.WhatsNew_title}>AVIF image support</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
-                <li className={styles.benefit}>good point one</li>
-                <li className={styles.benefit}>good point two</li>
-                <li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/AVIF_support"><a className={styles.links_learnMore}>learn more</a></Link>
@@ -88,9 +90,9 @@ export default function Home() {
               <h1 className={styles.WhatsNew_title}>Server components</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
-                <li className={styles.benefit}>good point one</li>
-                <li className={styles.benefit}>good point two</li>
-                <li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/server_components"><a className={styles.links_learnMore}>learn more</a></Link>
@@ -111,9 +113,9 @@ export default function Home() {
               <h1 className={styles.WhatsNew_title}>Url-imports</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
-                <li className={styles.benefit}>good point one</li>
-                <li className={styles.benefit}>good point two</li>
-                <li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/url_imports"><a className={styles.links_learnMore}>learn more</a></Link>
@@ -128,9 +130,9 @@ export default function Home() {
               <h1 className={styles.WhatsNew_title}>Suspense</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
-                <li className={styles.benefit}>good point one</li>
-                <li className={styles.benefit}>good point two</li>
-                <li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/suspense"><a className={styles.links_learnMore}>learn more</a></Link>
