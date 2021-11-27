@@ -50,7 +50,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/middleware"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/middleware/demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="/demos/middleware/Demo"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
@@ -73,7 +73,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/AVIF_support"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/AVIF_support/demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="/demos/AVIF_support/Demo"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
           </section>
@@ -90,7 +90,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/server_components"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/server_components/demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="/demos/server_components/Demo"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
@@ -113,7 +113,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/url_imports"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/url_imports/demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="/demos/url_imports/Demo"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
           </section>
@@ -130,7 +130,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/suspense"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/suspense/demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="/demos/suspense/Demo"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
