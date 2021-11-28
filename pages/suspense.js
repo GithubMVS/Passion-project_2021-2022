@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from './suspense.module.css'
 
-
-const suspense = () => {
+const Suspense = () => {
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default suspense
+export default Suspense

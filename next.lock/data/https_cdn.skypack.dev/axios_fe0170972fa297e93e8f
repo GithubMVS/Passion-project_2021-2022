@@ -1,0 +1,16 @@
+/*
+ * Skypack CDN - axios@0.24.0
+ *
+ * Learn more:
+ *   📙 Package Documentation: https://www.skypack.dev/view/axios
+ *   📘 Skypack Documentation: https://www.skypack.dev/docs
+ *
+ * Pinned URL: (Optimized for Production)
+ *   ▶️ Normal: https://cdn.skypack.dev/pin/axios@v0.24.0-Ajc84zCwGCAfO6Md0R5p/mode=imports/optimized/axios.js
+ *   ⏩ Minified: https://cdn.skypack.dev/pin/axios@v0.24.0-Ajc84zCwGCAfO6Md0R5p/mode=imports,min/optimized/axios.js
+ *
+ */
+
+// Browser-Optimized Imports (Don't directly import the URLs below in your application!)
+export * from '/-/axios@v0.24.0-Ajc84zCwGCAfO6Md0R5p/dist=es2019,mode=imports/optimized/axios.js';
+export {default} from '/-/axios@v0.24.0-Ajc84zCwGCAfO6Md0R5p/dist=es2019,mode=imports/optimized/axios.js';

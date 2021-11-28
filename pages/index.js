@@ -11,7 +11,6 @@ import Navigation from '../components/index/Navigation'
 import checkMark from '../public/homePage/checkMark.svg'
 
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
