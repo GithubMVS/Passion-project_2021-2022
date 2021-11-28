@@ -2,12 +2,12 @@
 export const fetchPokemonData = () => {
   const fetchAllPokemons = fetchPokemons();
   return {
-    pokemon: wrapPromiseFunction(fetchAllPokemons),
+    pokemon: thePromiseFunction(fetchAllPokemons),
   };
 };
 
-const wrapPromiseFunction = (promise) => {
-  let status = "pending";
+const thePromiseFunction = (promise) => {
+  let status = "hanging";
   let result;
   let suspender = promise.then(
     (res) => {
@@ -21,7 +21,7 @@ const wrapPromiseFunction = (promise) => {
   );
   return {
     read() {
-      if (status === "pending") {
+      if (status === "hanging") {
         throw suspender;
       } else if (status === "error") {
         throw result;

@@ -1,0 +1,16 @@
+/*
+ * Skypack CDN - lottie-web@5.8.1
+ *
+ * Learn more:
+ *   📙 Package Documentation: https://www.skypack.dev/view/lottie-web
+ *   📘 Skypack Documentation: https://www.skypack.dev/docs
+ *
+ * Pinned URL: (Optimized for Production)
+ *   ▶️ Normal: https://cdn.skypack.dev/pin/lottie-web@v5.8.1-gbfLvwNWs7S0Tqw223au/mode=imports/optimized/lottie-web.js
+ *   ⏩ Minified: https://cdn.skypack.dev/pin/lottie-web@v5.8.1-gbfLvwNWs7S0Tqw223au/mode=imports,min/optimized/lottie-web.js
+ *
+ */
+
+// Browser-Optimized Imports (Don't directly import the URLs below in your application!)
+export * from '/-/lottie-web@v5.8.1-gbfLvwNWs7S0Tqw223au/dist=es2019,mode=imports/optimized/lottie-web.js';
+export {default} from '/-/lottie-web@v5.8.1-gbfLvwNWs7S0Tqw223au/dist=es2019,mode=imports/optimized/lottie-web.js';
