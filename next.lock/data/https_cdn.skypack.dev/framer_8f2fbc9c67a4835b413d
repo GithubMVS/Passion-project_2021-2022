@@ -1,0 +1,16 @@
+/*
+ * Skypack CDN - framer@1.3.6
+ *
+ * Learn more:
+ *   📙 Package Documentation: https://www.skypack.dev/view/framer
+ *   📘 Skypack Documentation: https://www.skypack.dev/docs
+ *
+ * Pinned URL: (Optimized for Production)
+ *   ▶️ Normal: https://cdn.skypack.dev/pin/framer@v1.3.6-Ix6ENbML0DAYgZX3RMVm/mode=imports/optimized/framer.js
+ *   ⏩ Minified: https://cdn.skypack.dev/pin/framer@v1.3.6-Ix6ENbML0DAYgZX3RMVm/mode=imports,min/optimized/framer.js
+ *
+ */
+
+// Browser-Optimized Imports (Don't directly import the URLs below in your application!)
+export * from '/-/framer@v1.3.6-Ix6ENbML0DAYgZX3RMVm/dist=es2019,mode=imports/optimized/framer.js';
+export {default} from '/-/framer@v1.3.6-Ix6ENbML0DAYgZX3RMVm/dist=es2019,mode=imports/optimized/framer.js';

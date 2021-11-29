@@ -7,6 +7,9 @@ import styles from '../url_imports/demo.module.css'
 import { useState } from 'react'
 import Image from 'next/image'
 
+// framer try out
+import Test from "https://framer.com/m/Test-gXlx.js@2KpFwcsskFbCiEMKPDm5"
+
 // image imports
 import clipboard_image from '../../../public/demos/url_imports/clipboard.svg'
 import confetti_image from '../../../public/demos/url_imports/confetti.svg'
@@ -34,11 +37,13 @@ const Demo = () => {
     console.log(countDownTikker.round)
   }
 
+  /* 
   const copyToClipboard = () => {
     uiwCopyToClipboard('https://www.youtube.com/watch?v=dQw4w9WgXcQ', (isCopy) => {
     });
     alert('copied to clipboard')
   }
+  */
 
   return (
     <div className={styles.url_importDemo}>
@@ -82,7 +87,11 @@ const Demo = () => {
           <button className={styles.url_importDemo_button} onClick={countDown}> countdown 10 seconds </button>
         </div>
 
-        <div className={styles.url_importDemo_full}>
+        <Test
+          variant="Variant 1"
+        />
+
+        {/* <div className={styles.url_importDemo_full}>
           <div className={styles.url_importDemo_imageOrNumber_full}>
             <Image src={clipboard_image} alt='clipboard' />
           </div>
@@ -91,7 +100,7 @@ const Demo = () => {
             <p className={styles.url_importDemo_explenation_text}>Press the button, get a url, paste it into your browser and you get a surprise: ))</p>
           </div>
           <button className={styles.url_importDemo_button} onClick={copyToClipboard}> copy to clipboard </button>
-        </div>
+        </div>*/}
       </section>
 
     </div>

@@ -14,14 +14,14 @@ const LoadIcon = () => {
       render: 'svg',
       loop: true,
       autoplay: true,
-      animationData: require('../../../public/test.json')
+      animationData: require('../../../public/suspenseAnimation.json')
     })
   }, [])
 
   return (
-    <div>
-      <p> Loading pokemon data...</p>
+    <div className={styles.container_full}>
       <div className={styles.container} ref={container}></div>
+      <p className={styles.container_title}>Loading pokemon data...</p>
     </div>
   )
 }
