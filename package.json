@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react": "^17.0.37",
     "date-fns": "^2.26.0",
     "firebase": "^9.5.0",
     "firebase-admin": "^10.0.0",

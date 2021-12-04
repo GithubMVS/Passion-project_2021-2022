@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
-export function middleware(req) {
+export function middleware(req: NextRequest) {
   const country = req.geo.country?.toLowerCase() || 'us'
 
   req.nextUrl.pathname = `/edge/${country}`
