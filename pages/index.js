@@ -59,12 +59,12 @@ export default function Home() {
           </section>
 
           <section className={styles.whatsNew_single}>
-            <h1 className={styles.displayNone}>AVIF image support</h1>
+            <h1 className={styles.displayNone}>Vercel edge functions</h1>
             <div className={styles.whatsNew__single_image}>
               <p>replace with Image here</p>
             </div>
             <div className={styles.whatsNew_single_explenationFull}>
-              <h1 className={styles.WhatsNew_title}>AVIF image support</h1>
+              <h1 className={styles.WhatsNew_title}>Vercel edge functions</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
@@ -82,7 +82,7 @@ export default function Home() {
             <h1 className={styles.displayNone}>Server components</h1>
             <div className={styles.whatsNew_single_explenationFull}>
               <h1 className={styles.WhatsNew_title}>Server components</h1>
-              <p className={styles.WhatsNew_explenation}>React Server Components allow developers to build apps that span the server and client, combining the rich interactivity of client-side apps with the improved performance of traditional server rendering.</p>
+              <p className={styles.WhatsNew_explenation}>React Server Components allow developers to build apps that span the server AND client, combining the rich interactivity of client-side apps with the improved performance of traditional server rendering.</p>
               <ul className={styles.benefits}>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Choose how you want to render</li>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Improve user experience</li>

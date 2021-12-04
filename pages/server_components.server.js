@@ -11,25 +11,25 @@ import ServerTest from '../components/demos/server_components/likePerBlog.client
 import DetailBlog from '../components/demos/server_components/detailsBlog.server'
 
 const server_components = () => {
-
-  // Hier komt de code van de fetch die alle blogtitels en de users ophaalt.
-
-  // hier komt de code dat filterd door alle users
-  const [searchBlogs, setSearchBlogs] = useState(true)
-
-  // hier komt de code om te switchen tussen toevoegen en niet toevoegen.
-  const [button, setButton] = useState(true)
-  const [form, setForm] = useState(true)
-
-  const switchForm = () => {
-    setButton(!button)
-    setForm(!form)
-  }
-
+  /* 
+   // Hier komt de code van de fetch die alle blogtitels en de users ophaalt.
+ 
+   // hier komt de code dat filterd door alle users
+   const [searchBlogs, setSearchBlogs] = useState(true)
+ 
+   // hier komt de code om te switchen tussen toevoegen en niet toevoegen.
+   const [button, setButton] = useState(true)
+   const [form, setForm] = useState(true)
+ 
+   const switchForm = () => {
+     setButton(!button)
+     setForm(!form)
+   }
+ */
   return (
     <div>
 
-      {/* Hier komt code van de sidebar*/}
+      {/* Hier komt code van de sidebar
       <div className={styles.sideBarFull}>
         <div className={styles.sideBar__goBack}>
           <p className={styles.sideBar__goBack_image}>vervangen door image</p>
@@ -49,7 +49,7 @@ const server_components = () => {
           <AddBlog />
         </div>
 
-        {/* Hier ga je alle data in droppen van users en blogtitels*/}
+        Hier ga je alle data in droppen van users en blogtitels
         <div>
           <DetailBlog />
         </div>
@@ -57,8 +57,9 @@ const server_components = () => {
       </div>
 
 
-      {/* ook prop van welk id aka welk blog je selecteerd hebt en doorgeven aan de detailPage van de blog die server rendered is om zo via de fetch de details op te halen van die blog*/}
+      ook prop van welk id aka welk blog je selecteerd hebt en doorgeven aan de detailPage van de blog die server rendered is om zo via de fetch de details op te halen van die blog
       <ServerTest />
+      */}
     </div>
   )
 }
