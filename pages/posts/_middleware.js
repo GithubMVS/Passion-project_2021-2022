@@ -1,5 +1,9 @@
-const middleware = (req, ev) => {
-  return new Response(req.ua.os.name);
-};
+export default function middleware(req, ev) {
+  console.log('Edit and run at the edge!')
 
-export default middleware;
+  return new Response({
+    ip: req.ip,
+    geo: req.geo, // this will spin the globe!
+    ua: req.ua
+  })
+}
