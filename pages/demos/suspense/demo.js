@@ -16,9 +16,8 @@ const Demo = () => {
       </div>
 
       <div className={styles.suspenseDemo_full_article}>
-
         <div>
-          <h1>Streaming html with Suspense (showed with a demo)</h1>
+          <h1 className={styles.article_title}>Streaming html with Suspense (showed with a demo)</h1>
           <Image src={goBack} alt='goBack' />
           <p className={styles.explenationText}>Hier komt de uitleg van hoe suspense werkt en wat het concreet is</p>
           <div className={styles.why_group_full}>
@@ -33,9 +32,9 @@ const Demo = () => {
           </div>
         </div>
 
-        <div>
-          <h1>Comments on this article</h1>
-          <div>
+        <div className={styles.commentData_full}>
+          <h1 className={styles.commentData_full_title}>Comments on this article</h1>
+          <div className={styles.commentData_full_comments}>
             <Suspense fallback={<h1>loading comments</h1>}>
               <FetchComments />
             </Suspense>
