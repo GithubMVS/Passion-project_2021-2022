@@ -32,7 +32,7 @@ const thePromiseFunction = (promise) => {
 };
 
 const fetchComments = () => {
-  return fetch("https://jsonplaceholder.typicode.com/comments?_limit=25")
+  return fetch("https://jsonplaceholder.typicode.com/comments?_limit=250")
     .then((res) => res.json())
     .then((res) => res)
 };

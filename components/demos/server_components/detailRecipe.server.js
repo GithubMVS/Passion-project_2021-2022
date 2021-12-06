@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Demo = () => {
+const DetailRecipe = () => {
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default Demo
+export default DetailRecipe
