@@ -34,9 +34,5 @@ module.exports = {
       "https://jspm.dev/",
     ],
   }
-}
+}, withTM()
 
-
-const withTM = require('@vercel/edge-functions-ui/transpile')()
-
-module.exports = withTM();
