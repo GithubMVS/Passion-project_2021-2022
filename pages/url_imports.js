@@ -122,12 +122,12 @@ const url_imports = () => {
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>When to choose for url-imports:</h1>
-          <p className={styles.text}>Right now you should be careful of using them because they are still experimental, but in the future There shouldn`t be a reason why you shoul`t use them (except if they are not supported or don`t work) because they reduce the client side bundel.</p>
+          <p className={styles.text}>Right now you should be careful of using them because they are still experimental, but in the future There should not be a reason why you should not use them (except if they are not supported or do not work) because they reduce the client side bundel.</p>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>My personal opinion on this:</h1>
-          <p className={styles.text}>I think they very neat and useful, it saves time and space for the client, so there really isn`t a reason not to use. But be careful because it is still in development and there are still a lot of bugs around it, especially in production.</p>
+          <p className={styles.text}>I think they very neat and useful, it saves time and space for the client, so there really is not a reason not to use it. But be careful because it is still in development and there are still a lot of bugs around it, especially in production.</p>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
@@ -148,7 +148,7 @@ const url_imports = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>4: export the component by clicking on `handshake`` and copy the code to your clipboard</p>
+            <p className={styles.steps_text}>4: export the component by clicking on handshake and copy the code to your clipboard</p>
             <div className={styles.picture_url_imports}><Image src={framer_step_4} alt='framer_step_4' /></div>
             <div className={styles.picture_url_imports}><Image src={framer_step_4_1} alt='framer_step_4_1' /></div>
           </div>
@@ -170,13 +170,13 @@ const url_imports = () => {
           <div>
             <p className={styles.steps_text}>Finding a good CDN:</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>In this example I used skypack, but this wasn`t the first one I played around with, I would definitely recommend skypack, because it is very user-friendly and easy to use.</li>
+              <li className={styles.text_list}>In this example I used skypack, but this was not the first one I played around with, I would definitely recommend skypack, because it is very user-friendly and easy to use.</li>
             </ul>
           </div>
           <div>
             <p className={styles.steps_text}>Being on the latest version of nextJS:</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>This one is an easy one but also an easy one to forget... simply yarn add or npm install "next@12" in your terminal and you should be good to go</li>
+              <li className={styles.text_list}>This one is an easy one but also an easy one to forget... simply yarn add or npm install `next@12`` in your terminal and you should be good to go</li>
             </ul>
           </div>
           <div>

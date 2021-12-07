@@ -100,7 +100,7 @@ const server_components = () => {
             <p className={styles.title}>Server-side generation</p>
             <ul className={styles.list}>
               <li className={styles.text_list}>To give your user a personalized experience, you can take advantage of server-side rendering to create dynamic content on each request to your sites pages. This will enable you to offer different content to people based on their location, authenticate them, or configure the language of your site.</li>
-              <li className={styles.text_list}>The drawback of this approach is that it can be slower. If the server processing the request is far away from the visitors' origin, then the request can take time to complete, and the content may not be available to the user at the speed offered by serving purely static content.</li>
+              <li className={styles.text_list}>The drawback of this approach is that it can be slower. If the server processing the request is far away from the visitors origin, then the request can take time to complete, and the content may not be available to the user at the speed offered by serving purely static content.</li>
               <div className={styles.picture_url_imports}><Image src={serverSide} alt='serverSide' /></div>
             </ul>
           </div>
