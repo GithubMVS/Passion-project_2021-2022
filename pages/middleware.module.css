@@ -2,6 +2,14 @@
   background-color: #F8F9FD;
 }
 
+.displayNone {
+  display: none
+}
+
+.picture_url_imports {
+  margin-bottom: 1.5rem;
+}
+
 /* header */
 
 .header {
@@ -44,36 +52,30 @@
   font-weight: 900;
 }
 
-/* first part */
+/* full explenation */
 .explenation {
   background-color: white;
-  padding: 0rem 20rem;
+  padding: 0rem 40rem;
 }
 
 /* first part */
-.oneXtwo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 10rem;
-  grid-column-gap: 10%;
-}
-
-.titleWithText {
-  padding-bottom: 10rem;
-}
 
 .title {
-  color: var(--colorPurple);
+  color: var(--colorBlack);
   font-family: var(--font-family-Inter);
   font-size: 3rem;
   font-weight: 800;
-  padding-bottom: 5rem;
+  padding-bottom: 1.5rem;
+  width: 75%;
+  line-height: 4rem;
 }
 
 .text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--font-family-Inter);
-  color: var(--colorGrey);
-  font-weight: 400;
-  line-height: 3.5rem;
+  color: var(--colorBlack);
+  font-weight: 300;
+  line-height: 3.25rem;
+  width: 95%;
 }
+
