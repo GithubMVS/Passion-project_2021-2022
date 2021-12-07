@@ -27,13 +27,12 @@ const withTM = require('@vercel/edge-functions-ui/transpile')()
 
 module.exports = withTM()
 
-*/ 
+*/
 
 
-const withTM = require('@vercel/edge-functions-ui/transpile')()
+module.exports = {
 
-
-module.exports = withTM(), {
+  presets: [require('@vercel/edge-functions-ui/transpile')],
   reactStrictMode: true,
   experimental: {
     concurrentFeatures: true,
