@@ -30,12 +30,9 @@ module.exports = withTM()
 */
 
 
-module.exports = {
+const withTM = require('@vercel/edge-functions-ui/transpile')()
 
-  purge: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    'node_modules/@vercel/edge-functions-ui/**/*.{js,ts,jsx,tsx}',
-  ],
+module.exports = withTM({
   reactStrictMode: true,
   experimental: {
     concurrentFeatures: true,
@@ -48,4 +45,4 @@ module.exports = {
       "https://jspm.dev/",
     ],
   }
-}
+})
