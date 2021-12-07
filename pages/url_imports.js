@@ -202,7 +202,7 @@ const url_imports = () => {
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>My used resources</h1>
+          <h1 className={styles.title}>My used resources:</h1>
           <ul className={styles.list}>
             <li className={styles.text_list}>https://nextjs.org/docs/upgrading</li>
             <li className={styles.text_list}>https://nextjs.org/blog/next-12#url-imports </li>
