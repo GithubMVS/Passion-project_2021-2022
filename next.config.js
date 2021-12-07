@@ -32,7 +32,10 @@ module.exports = withTM()
 
 module.exports = {
 
-  presets: [require('@vercel/edge-functions-ui/transpile')()],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    'node_modules/@vercel/edge-functions-ui/**/*.{js,ts,jsx,tsx}',
+  ],
   reactStrictMode: true,
   experimental: {
     concurrentFeatures: true,
