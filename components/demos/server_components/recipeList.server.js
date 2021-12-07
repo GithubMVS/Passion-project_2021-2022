@@ -5,14 +5,14 @@ import axios from 'https://cdn.skypack.dev/axios';
 import Button from './buttonRecipe.client'
 
 
-
+/* 
 const dataFetch = async () => {
   await fetch('https://cdn.contentful.com/spaces/o563rvka7ufh/environments/master/entries?access_token=hhq_6AYzE49LWxXC1h7cVhPgx7u9DC_3GG2YX_gUfKk')
     .then(res => res.json())
     .then(data => RecipeList(data.items))
 }
 dataFetch();
-/* 
+
 axios.get('https://cdn.contentful.com/spaces/o563rvka7ufh/environments/master/entries?access_token=hhq_6AYzE49LWxXC1h7cVhPgx7u9DC_3GG2YX_gUfKk')
   .then(res => res.data.items)
   .then(res => RecipeList(res))
@@ -22,18 +22,7 @@ axios.get('https://cdn.contentful.com/spaces/o563rvka7ufh/environments/master/en
 
 const RecipeList = (data) => {
 
-  /* 
-    console.log(data)
-  
-    let recipes = []
-    console.log(Array.isArray(data))
-    if (data.length >= 0) {
-      recipes = data;
-    }
-  
-    console.log(recipes)
- 
-    */
+
   return (
     <div>
       <p>begin</p>

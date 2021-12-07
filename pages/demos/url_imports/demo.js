@@ -1,13 +1,12 @@
 import confetti from 'https://cdn.skypack.dev/canvas-confetti'
 import roll from 'https://cdn.skypack.dev/roll';
-import uiwCopyToClipboard from 'https://cdn.skypack.dev/@uiw/copy-to-clipboard';
 import tinyTimer from 'https://cdn.skypack.dev/tiny-timer';
 import Link from 'next/link'
 import styles from '../url_imports/demo.module.css'
 import { useState } from 'react'
 import Image from 'next/image'
 
-// framer try out
+// framer 
 import Test from "https://framer.com/m/Test-gXlx.js@2KpFwcsskFbCiEMKPDm5"
 
 // image imports
@@ -36,14 +35,6 @@ const Demo = () => {
     timer.start(10000) // run for 5 seconds
     console.log(countDownTikker.round)
   }
-
-  /* 
-  const copyToClipboard = () => {
-    uiwCopyToClipboard('https://www.youtube.com/watch?v=dQw4w9WgXcQ', (isCopy) => {
-    });
-    alert('copied to clipboard')
-  }
-  */
 
   return (
     <div className={styles.url_importDemo}>
