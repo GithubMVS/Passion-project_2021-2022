@@ -21,6 +21,9 @@ module.exports = withTM(), {
 */
 
 
+const withTM = require('@vercel/edge-functions-ui/transpile')()
+
+
 module.exports = {
   reactStrictMode: true,
   experimental: {
