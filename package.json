@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vercel/edge-functions-ui": "^0.2.1",
+    "contentful": "^9.1.5",
     "date-fns": "^2.26.0",
     "firebase": "^9.5.0",
     "firebase-admin": "^10.0.0",
@@ -17,8 +18,7 @@
     "next": "12",
     "nookies": "^2.5.2",
     "react": "^0.0.0-experimental-0cc724c77-20211125",
-    "react-dom": "^0.0.0-experimental-0cc724c77-20211125",
-    "react-fetch": "^0.0.9"
+    "react-dom": "^0.0.0-experimental-0cc724c77-20211125"
   },
   "devDependencies": {
     "eslint": "7",
