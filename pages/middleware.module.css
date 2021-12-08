@@ -120,3 +120,31 @@
   width: 75%;
   line-height: 5rem;
 }
+
+/* part four how to do */
+
+.steps_text {
+  padding: 5rem 0rem 1rem 0rem;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 75%;
+  font-family: var(--font-family-Inter);
+  color: var(--colorBlack);
+  line-height: 3rem;
+}
+
+.steps_text_special {
+  padding: 3rem 0rem 1rem 0rem;
+  font-size: 2rem;
+  width: 75%;
+  font-family: var(--font-family-Inter);
+  color: var(--colorBlack);
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+.picture_url_imports {
+  margin-bottom: 1.5rem;
+}
+
+/* */

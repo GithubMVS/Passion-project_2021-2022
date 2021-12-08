@@ -19,23 +19,19 @@ export default function Home() {
         <meta name="description" content="Passion Project" />
       </Head>
       <main className={styles.homepage__full}>
-        <header>
+        <header className={styles.homepage__full_header}>
           <Navigation />
-          <h1>A presentation on the future of the <span>evolution</span> of a fullstack framework.</h1>
-          <div>
-            <p>Discover my research</p>
-            <p>replace with Image here</p>
-          </div>
+          <h1 className={styles.homepage__full_title}>A presentation on the future of the <span className={styles.homepage__full_title_special}>evolution</span> of a fullstack framework.</h1>
         </header>
 
-        <section>
-          <h1>First of all...</h1>
-          <p>IT`S FAST</p>
+        <section className={styles.itsFast_full}>
+          <h1 className={styles.itsFast_full_title}>First of all...</h1>
+          <p className={styles.itsFast_full_gradient}>IT`S FAST</p>
         </section>
 
 
         <article className={styles.whatsNew__total}>
-          <h1 className={styles.whatsNew__total_title}>{"Now here's what's new"}</h1>
+          <h1 className={styles.whatsNew__total_title}>Here are the important new features:</h1>
           <p className={styles.whatsNew__total_text}>Choose the one you want to discover</p>
 
           <section className={styles.whatsNew_single}>
@@ -122,7 +118,7 @@ export default function Home() {
             <h1 className={styles.displayNone}>Suspense</h1>
             <div className={styles.whatsNew_single_explenationFull}>
               <h1 className={styles.WhatsNew_title}>Suspense</h1>
-              <p className={styles.WhatsNew_explenation}>text with explenation</p>
+              <p className={styles.WhatsNew_explenation}></p>
               <ul className={styles.benefits}>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>

@@ -63,29 +63,41 @@ const server_components = () => {
           </div>
         </section>
 
-
         <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>Haven`t we done this before (like with php)?</h1>
-          <p className={styles.text}>...</p>
-        </section>
+          <h1 className={styles.title}>How to do this in nextJS?</h1>
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>1: Make sure you are on the latest version of nextJS (nextJS12) by installing the latest version of next with yarn or npm:</p>
+          </div>
 
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>2: Then chose a CDN you want to use (I used skypack for this demo):</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>Skypack</li>
+            </ul>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>3: add the allowed URL prefixes inside your next.config.js like below:</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>4: Now search for a library on skypack and import it:</p>
+          </div>
+        </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.quote}>`Now you can choose which parts you want to render with the server instead of all or nothing.`</h1>
         </section>
-
-
-        <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>What is static site generation and server-side generation?</h1>
-          <p className={styles.text}>This new approach to data fetching and rendering in general is fundamentally different from already known getStaticProps or get ServerSideProps, etc from previous versions of NextJs. This new approach to rendering the website per component level gives us a more efficient way to cache content and stream data as it flows rather than render it after some period of time all at once (meaning there will no longer be such thing as either all cache at once or no cache at all).</p>
-        </section>
-
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>So why is this so great?</h1>
           <p className={styles.text}>Traditionally there are two ways to serve content, statically from a Content Delivery Network (CDN) close to the user for fast response times, or dynamically, with personalization configured at the server level on each request. Now you can choose which part you want to render via the server and what via the client which can make pages load faster content and improve the User experience.</p>
         </section>
 
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>What is static site generation and server-side generation?</h1>
+          <p className={styles.text}>This new approach to data fetching and rendering in general is fundamentally different from already known getStaticProps or get ServerSideProps, etc from previous versions of NextJs. This new approach to rendering the website per component level gives us a more efficient way to cache content and stream data as it flows rather than render it after some period of time all at once (meaning there will no longer be such thing as either all cache at once or no cache at all).</p>
+        </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <div className={styles.explenation_Part_list}>
@@ -106,6 +118,23 @@ const server_components = () => {
           </div>
         </section>
 
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Some good use of Server components:</h1>
+          <ul className={styles.list}>
+            <li className={styles.text_list}>When you have to fetch a lot of data from a database for example, this is because a server most likely renders the data faster than a computor that is working on a lot at the same time.</li>
+            <li className={styles.text_list}>When there isn`t a lot of interactivity, this is because when you render on the server your javascript will render after the HTML and CSS is loaded, meaning that you sometimes need to wait for the javascript === the interactivity.</li>
+            <li className={styles.text_list}>When loading heavy npm packages.</li>
+          </ul>
+        </section>
+
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Haven`t we done this before (like with php)?</h1>
+          <p className={styles.text}>...</p>
+        </section>
+
+
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Some challenges I faced, and how I fixed them:</h1>
           <div>
@@ -116,14 +145,6 @@ const server_components = () => {
           </div>
         </section>
 
-        <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>Some good use of Server components:</h1>
-          <ul className={styles.list}>
-            <li className={styles.text_list}>When you have to fetch a lot of data from a database for example, this is because a server most likely renders the data faster than a computor that is working on a lot at the same time.</li>
-            <li className={styles.text_list}>When there isn`t a lot of interactivity, this is because when you render on the server your javascript will render after the HTML and CSS is loaded, meaning that you sometimes need to wait for the javascript === the interactivity.</li>
-            <li className={styles.text_list}>When loading heavy npm packages.</li>
-          </ul>
-        </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Conclusion</h1>
