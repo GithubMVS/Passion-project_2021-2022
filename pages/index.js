@@ -10,6 +10,10 @@ import Navigation from '../components/index/Navigation'
 //image imports
 import checkMark from '../public/homePage/checkMark.svg'
 
+// images imports
+import url_imports from '../public/homePage/url_imports.png'
+import server_components from '../public/homePage/server_components.png'
+import Suspense from '../public/homePage/Suspense.png'
 
 export default function Home() {
   return (
@@ -90,14 +94,14 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
-              <p>replace with Image here</p>
+              <Image src={server_components} alt="server_components" />
             </div>
           </section>
 
           <section className={styles.whatsNew_single}>
             <h1 className={styles.displayNone}>Url-imports</h1>
             <div className={styles.whatsNew__single_image}>
-              <p>replace with Image here</p>
+              <Image src={url_imports} alt="url_imports" />
             </div>
             <div className={styles.whatsNew_single_explenationFull}>
               <h1 className={styles.WhatsNew_title}>Url-imports</h1>
@@ -130,7 +134,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
-              <p>replace with Image here</p>
+              <Image src={Suspense} alt="Suspense" />
             </div>
           </section>
         </article>

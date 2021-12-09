@@ -16,6 +16,7 @@
   align-items: center;
   padding: 14rem 0rem;
   border-top: 0.1rem solid #C4C4C4;
+  grid-column-gap: 5%;
 }
 
 .displayNone {
