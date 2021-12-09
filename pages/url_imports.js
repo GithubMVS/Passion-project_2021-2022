@@ -39,7 +39,7 @@ const url_imports = () => {
           <h1 className={styles.displayNone}>What are url imports?</h1>
           <div className={styles.titleWithText}>
             <h1 className={styles.title}>So what are url imports?</h1>
-            <p className={styles.text}>NextJs now natively supports ES modules enabling the industry to transition away from CommonJs module system, but it also introduces such thing as URL imports. You can now easily import 3rd party libraries without installing it through npm. dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+            <p className={styles.text}>NextJs now natively supports ES modules enabling the industry to transition away from CommonJs module system, but it also introduces such thing as URL imports. You can now easily import 3rd party libraries without installing it through npm.</p>
           </div>
           <div className={styles.titleWithText}>
             <h1 className={styles.title}>Why is it great? (or not)</h1>

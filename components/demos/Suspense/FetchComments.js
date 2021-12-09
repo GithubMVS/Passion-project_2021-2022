@@ -5,7 +5,7 @@ import { fetchData } from '../Suspense/Api'
 const commentData = fetchData();
 
 const FetchComments = () => {
-  const allComments = commentData.pokemon.read()
+  const allComments = commentData.comments.read()
   console.log(allComments)
 
   return (

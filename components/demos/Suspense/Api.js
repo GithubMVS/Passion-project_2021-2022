@@ -1,7 +1,7 @@
 export const fetchData = () => {
   const commentsPromise = fetchComments();
   return {
-    pokemon: thePromiseFunction(commentsPromise),
+    comments: thePromiseFunction(commentsPromise),
   };
 };
 

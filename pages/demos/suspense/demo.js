@@ -1,11 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../suspense/demo.module.css'
-import { Suspense } from 'react'
+
+
 
 import goBack from '../../../public/arrow_goBack.svg'
 
+
+import { Suspense } from 'react'
 import FetchComments from '../../../components/demos/Suspense/FetchComments'
+
+
 import Animation from '../../../components/demos/Suspense/LoadIcon'
 
 const Demo = () => {
