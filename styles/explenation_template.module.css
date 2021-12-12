@@ -112,14 +112,8 @@
   padding-bottom: 5rem;
 }
 
-.quote {
-  font-family: var(--font-family-Inter);
-  font-size: 3.5rem;
-  font-weight: 600;
-  font-style: italic;
-  width: 75%;
-  line-height: 5rem;
-}
+/* part three */
+
 
 /* part four how to do */
 
@@ -140,11 +134,46 @@
   font-family: var(--font-family-Inter);
   color: var(--colorBlack);
   line-height: 3rem;
+}
+
+.copyThis {
+  background-color: #ededed;
+  width: auto;
+  padding: 2.5rem;
+  border-radius: .5rem;
+  margin-top: 3rem;
+}
+
+.copyThis_text {
+  color: #4271ae;
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  padding: .5rem 0rem;
+  font-weight: 300;
+}
+
+.copyThis_title {
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  font-weight: 700;
+}
+
+.quote {
+  font-family: var(--font-family-Inter);
+  font-size: 3.5rem;
   font-weight: 600;
+  font-style: italic;
+  width: 75%;
+  line-height: 5rem;
 }
 
-.picture_url_imports {
-  margin-bottom: 1.5rem;
-}
 
-/* */
+.title_special {
+  color: var(--colorBlack);
+  font-family: var(--font-family-Inter);
+  font-size: 2rem;
+  font-weight: 700;
+  width: 75%;
+  line-height: 4rem;
+}

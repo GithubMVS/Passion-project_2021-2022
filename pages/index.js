@@ -59,12 +59,12 @@ export default function Home() {
           </section>
 
           <section className={styles.whatsNew_single}>
-            <h1 className={styles.displayNone}>Vercel edge functions</h1>
+            <h1 className={styles.displayNone}>AVIF image format</h1>
             <div className={styles.whatsNew__single_image}>
               <p>replace with Image here</p>
             </div>
             <div className={styles.whatsNew_single_explenationFull}>
-              <h1 className={styles.WhatsNew_title}>Vercel edge functions</h1>
+              <h1 className={styles.WhatsNew_title}>AVIF image format</h1>
               <p className={styles.WhatsNew_explenation}>text with explenation</p>
               <ul className={styles.benefits}>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>

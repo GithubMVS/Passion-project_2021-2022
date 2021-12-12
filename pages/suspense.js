@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './suspense.module.css'
+import styles from '../styles/explenation_template.module.css'
 
 import Nav from '../components/index/Navigation'
 import Link from 'next/link'

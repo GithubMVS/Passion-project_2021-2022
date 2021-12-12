@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './AVIF_support.module.css'
+import styles from '../styles/explenation_template.module.css'
 
 const AVIF_support = () => {
   return (

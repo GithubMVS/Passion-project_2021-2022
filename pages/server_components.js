@@ -1,4 +1,4 @@
-import styles from './server_components.module.css'
+import styles from '../styles/explenation_template.module.css'
 
 import Nav from '../components/index/Navigation'
 import Link from 'next/link'
@@ -16,7 +16,7 @@ const server_components = () => {
         <Nav />
         <div className={styles.headerInfo}>
           <h1 className={styles.headerInfo_title}>Server Components</h1>
-          <p className={styles.headerInfo_text}>Buiild apps that span both the client and the server.</p>
+          <p className={styles.headerInfo_text}>Build apps that span both the client and the server.</p>
           <Link href="/demos/server_components/demo"><a className={styles.links_toDemo}>Try out demo</a></Link>
         </div>
       </div>
