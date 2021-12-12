@@ -30,7 +30,7 @@ export default function Home() {
 
         <section className={styles.itsFast_full}>
           <h1 className={styles.itsFast_full_title}>First of all...</h1>
-          <p className={styles.itsFast_full_gradient}>IT`S FAST</p>
+          <p className={styles.itsFast_full_gradient}>{`IT'S FAST`}</p>
         </section>
 
 

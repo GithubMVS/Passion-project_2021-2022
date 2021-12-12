@@ -1,0 +1,65 @@
+.links_learnMore {
+  text-decoration: none;
+  font-family: var(--font-family-Montreal);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  padding: 5rem 0rem;
+  color: var(--colorPurple);
+}
+
+.AVIF_format_full {
+  padding: 0rem 20rem;
+  background-color: var(--backgroundColor);
+  height: 100%;
+}
+
+.goBack__full {
+  padding: 5rem 0rem;
+}
+
+.AVIF_format_full_title {
+  color: var(--colorBlack);
+  font-family: var(--font-family-Montreal);
+  font-weight: 700;
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+.AVIF_format_full_text {
+  color: #888C98;
+  font-family: var(--font-family-Inter);
+  padding: 3rem 0rem 5rem 0rem;
+  font-weight: 200;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  width: 85%;
+}
+
+.AVIF_format_full_images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.contribution_title {
+  color: var(--colorBlack);
+  font-family: var(--font-family-Montreal);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.contribution_list {
+  padding: 1.5rem 0rem 10rem 4rem;
+}
+
+.contribution_listEach {
+  color: var(--colorBlack);
+  font-family: var(--font-family-Inter);
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: .75rem 0rem;
+  list-style-type: circle;
+}

@@ -3,7 +3,7 @@ import React from 'react'
 
 
 // server components import
-import Recipes from '../../../components/demos/server_components/recipeList.server.js'
+import Recipes from '../../../components/demos/server_components/recipeList.client.js'
 
 const Demo = () => {
   return (

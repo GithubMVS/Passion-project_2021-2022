@@ -20,7 +20,7 @@ const Suspense = () => {
         <Nav />
         <div className={styles.headerInfo}>
           <h1 className={styles.headerInfo_title}>Suspense</h1>
-          <p className={styles.headerInfo_text}>Dit is een korte uitleg daarvan om een idee te krijgen, kan ook quote zijn.</p>
+          <p className={styles.headerInfo_text}>Suspense (for datafetching) lets you “wait” for some code to load and declaratively specify a loading state</p>
           <Link href="/demos/suspense/demo"><a className={styles.links_toDemo}>Try out demo</a></Link>
         </div>
       </div>
@@ -117,7 +117,7 @@ const Suspense = () => {
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>What is the fallback?</h1>
-          <p className={styles.text}>While your data is coming in you might need to let the user know that it is loading, that’s the fallback, the fallback can be a (loading) animation or personalised text like ‘loadinig content’. The fallback is a replacement for your incoming while it is coming in. Eventually, we’ll get all the data, and then the fallback will be replaced by your data.</p>
+          <p className={styles.text}>While your data is coming in you might need to let the user know that it is loading, that’s the fallback, the fallback can be a (loading) animation or personalised text like ‘loading content’. The fallback is a replacement for your incoming data while it is coming in. Eventually, we’ll get all the data, and then the fallback will be replaced by your data.</p>
         </section>
 
 
@@ -163,8 +163,8 @@ const Suspense = () => {
           <h1 className={styles.title}>Some good use of Suspense:</h1>
           <ul className={styles.list}>
             <li className={styles.text_list}>When you have data that takes a long time to render</li>
-            <li className={styles.text_list}>If you want to improve UX on your website, because it’s also just a great fallback for when your data is not renderend yet.</li>
-            <li className={styles.text_list}>when you want to avoid race conditions</li>
+            <li className={styles.text_list}>If you want to improve UX on your website, because it’s also just a great fallback for when your data is not renderend  or when your user has slow internet connection.</li>
+            <li className={styles.text_list}>When you want to avoid race conditions.</li>
           </ul>
         </section>
 
@@ -190,14 +190,20 @@ const Suspense = () => {
           <div>
             <p className={styles.steps_text}>Suspense wouldn’t load in my files.</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>This one is probably because it is still experimental but sometimes when you import Suspense and try to use it you would receive an error (see picture), but the answer is very simple, just keep trying by litterly removing and adding the suspense code and you should be good to go.t</li>
+              <li className={styles.text_list}>This one is probably because it is still experimental but sometimes when you import Suspense and try to use it you would receive an error (see picture), but the answer is very simple, just keep trying by literally removing and adding the suspense code and you should be good to go.t</li>
             </ul>
           </div>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Conclusion</h1>
-          <p className={styles.text}>Suspense for datafetching is a really great tool of react 18 it makes it possible to load some data or all data asychronously. While I would recommend of trying it out, be carefull because it is still experimental.</p>
+          <p className={styles.text}>Suspense for datafetching is a really great tool of react 18 it makes it possible to load some data or all data asychronously. While I would recommend of trying it out, be carefull because it is still experimental. But it is a great feature non the less.</p>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Want to try it yourself?</h1>
+          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="url"> codeSandbox link</a> </p>
+          <p className={styles.text}>Here is the demo I made on Github: <a href="url"> github link</a> </p>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>

@@ -1,55 +1,50 @@
 import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../AVIF_support/demo.module.css'
 
-const EdgeFunctions = () => {
+// arrow image
+import goBack from '../../../public/arrow_goBack.svg'
 
-}
-
-const noEdgeFunctions = () => {
-
-}
+// AVIF image format:
+import auto from '../../../public/AVIF_image_format/AVIF/auto.avif'
+import bergen from '../../../public/AVIF_image_format/AVIF/bergen.avif'
+import bloemen from '../../../public/AVIF_image_format/AVIF/bloemen.avif'
+import brug from '../../../public/AVIF_image_format/AVIF/brug.avif'
+import moeras from '../../../public/AVIF_image_format/AVIF/moeras.avif'
+import paddenstoelen from '../../../public/AVIF_image_format/AVIF/paddenstoelen.avif'
 
 const Demo = () => {
   return (
-    <div className={styles.edgeFunctions_full}>
-      <h1 className={styles.edgeFunctions_full_title}>Edge functions demo</h1>
-      <p className={styles.edgeFunctions_full_explenation}>explenation edge functions</p>
-      <div className={styles.edgeFunctions_demoFull}>
-        <div className={styles.edgeFunctions_demoFull_left}>
-          <div className={styles.edgeFunctions_api}>
-            <p className={styles.edgeFunctions_api_title}>API data -- title</p>
-            <p className={styles.edgeFunctions_api_description}>API data -- description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-          </div>
-          <div className={styles.edgeFunctions_tryout_full}>
-            <p className={styles.edgeFunctions_tryout_full_title}>edge functions</p>
-            <p className={styles.edgeFunctions_tryout_full_explenation}>explenation edge functions</p>
-            <button onClick={EdgeFunctions} className={styles.edgeFunctions_tryout_full_button}>try out</button>
-          </div>
-          <div className={styles.edgeFunctions_tryout_full}>
-            <p className={styles.edgeFunctions_tryout_full_title}>edge functions</p>
-            <p className={styles.edgeFunctions_tryout_full_explenation}>explenation edge functions</p>
-            <button onClick={noEdgeFunctions} className={styles.edgeFunctions_tryout_full_button}>try out</button>
-          </div>
-        </div>
-        <div className={styles.edgeFunctions_demoFull_right}>
-          <div className={styles.testSpeed_full}>
-            <p className={styles.testSpeed_full_title}>speed with edge functions</p>
-            <p className={styles.testSpeed_full_actualSpeed}>200</p>
-            <p className={styles.testSpeed_full_milisecondsText}>ms</p>
-          </div>
+    <div className={styles.AVIF_format_full}>
+      <div className={styles.goBack__full}>
+        <Image src={goBack} alt='goBack' />
+        <Link href="/allDemos"><a className={styles.links_learnMore}>See other demos</a></Link>
+      </div>
 
-          <div className={styles.testSpeed_full}>
-            <p className={styles.testSpeed_full_title}>speed with edge functions</p>
-            <p className={styles.testSpeed_full_actualSpeed}>200</p>
-            <p className={styles.testSpeed_full_milisecondsText}>ms</p>
-          </div>
+      <div className={styles.AVIF_format_titleAndText}>
+        <h1 className={styles.AVIF_format_full_title}>AVIF image format demo</h1>
+        <p className={styles.AVIF_format_full_text}>This is a new image format now supported by nextJS12 that is 20% lighter than webP, really revelutionary. In this demo we will show you 6 4K images, and we’ll show how easy they render in because of how light they are. Now please check your browser because as of December 12th 2021, they are not supported in safari and older browser. Ofcours a fallback to webP and jpeg if needed. All images are from pexels.com</p>
+      </div>
+      <div className={styles.AVIF_format_full_images}>
+        <Image src={auto} alt='auto' />
+        <Image src={bergen} alt='bergen' />
+        <Image src={bloemen} alt='bloemen' />
+        <Image src={brug} alt='brug' />
+        <Image src={moeras} alt='moeras' />
+        <Image src={paddenstoelen} alt='paddenstoelen' />
+      </div>
 
-          <div className={styles.testSpeed_full}>
-            <p className={styles.testSpeed_full_title}>speed with edge functions</p>
-            <p className={styles.testSpeed_full_actualSpeed}>200</p>
-            <p className={styles.testSpeed_full_milisecondsText}>ms</p>
-          </div>
-        </div>
+      <div className={styles.contribution}>
+        <p className={styles.contribution_title}>Here is the contribution to the artists of the pictures from pexels (in order):</p>
+        <ul className={styles.contribution_list}>
+          <li className={styles.contribution_listEach}>Photo by Vlad Alexandru Popa from Pexels</li>
+          <li className={styles.contribution_listEach}>Photo by Francesco Ungaro from Pexels</li>
+          <li className={styles.contribution_listEach}>Photo by Irina Iriser from Pexels</li>
+          <li className={styles.contribution_listEach}>Photo by Mohamed Almari from Pexels</li>
+          <li className={styles.contribution_listEach}>Photo by Quang Nguyen Vinh from Pexels</li>
+          <li className={styles.contribution_listEach}>Photo by Visually Us from Pexels</li>
+        </ul>
       </div>
 
     </div>

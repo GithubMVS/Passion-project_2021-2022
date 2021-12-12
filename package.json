@@ -8,11 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/edge-functions-ui": "^0.2.1",
     "contentful": "^9.1.5",
     "date-fns": "^2.26.0",
-    "firebase": "^9.5.0",
-    "firebase-admin": "^10.0.0",
     "framer": "^2.0.0-beta.13",
     "framer-motion": "^5.3.3",
     "next": "12",

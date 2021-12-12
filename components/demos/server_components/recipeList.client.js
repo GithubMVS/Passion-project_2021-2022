@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'https://cdn.skypack.dev/axios';
 
+
+
 // client button import
 import Button from './buttonRecipe.client'
 
@@ -18,15 +20,32 @@ axios.get('https://cdn.contentful.com/spaces/o563rvka7ufh/environments/master/en
   .then(res => RecipeList(res))
 */
 
+function timeout(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export default async function getArticle() {
+
+  const url = `https://fakestoreapi.com/products`;
+
+  await timeout(3000);
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
+}
 
 
+
+/*
 const RecipeList = (data) => {
 
+  console.log(data)
 
   return (
     <div>
       <p>begin</p>
-      {/* 
+      {
       {recipes.map(recipe => {
         <ul>
           <li>{recipe.fields.title}</li>
@@ -37,8 +56,14 @@ const RecipeList = (data) => {
       <p>{recipes.map(test => { console.log(test.fields.title) })}</p>
       {data.length === 0 ? <p>er zit niets in de array</p> :
         <p>er zit iets in de array</p>}
-        */
+
       }
+
+      {data.map(recipe => (
+        <div key={recipe.id}>
+          <p></p>
+        </div>
+      ))}
 
       <p>end</p>
     </div >
@@ -46,3 +71,4 @@ const RecipeList = (data) => {
 }
 
 export default RecipeList
+*/
