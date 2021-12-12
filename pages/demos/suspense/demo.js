@@ -2,14 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../suspense/demo.module.css'
 
-
-
 import goBack from '../../../public/arrow_goBack.svg'
-
 
 import { Suspense } from 'react'
 import FetchComments from '../../../components/demos/Suspense/FetchComments'
-
 
 import Animation from '../../../components/demos/Suspense/LoadIcon'
 
@@ -24,7 +20,6 @@ const Demo = () => {
       <div className={styles.suspenseDemo_full_article}>
         <div>
           <h1 className={styles.article_title}>Streaming html with Suspense (showed with a demo)</h1>
-          <Image src={goBack} alt='goBack' />
           <p className={styles.explenationText}>React18 offers a new feature called streaming html, with streaming html the server can send pieces of your components as they get rendered, this works by using Suspense where you say which part of your application will take longer to load and which one’s should be rendered directly. In this example the article with title, photo and text should render immediately but the comments (because there can be 1000’s of them) shouldn’t so in this case we rapped Suspense around the comment component so that the comments can load while the article is already rendered. When some parts of your websites take longer to load you can let them render while other more important parts are already visible</p>
           <div className={styles.why_group_full}>
             <div className={styles.why_group}>

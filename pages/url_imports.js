@@ -6,9 +6,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // image imports
-import step_1_url_imports from '../public/url_imports/explenation/step_1_url_imports.png'
-import step_3_url_imports from '../public/url_imports/explenation/step_3_url_imports.png'
-import step_4_url_imports from '../public/url_imports/explenation/step_4_url_imports.png'
 import step_4_1_url_imports from '../public/url_imports/explenation/step_4_1_url_imports.png'
 import step_4_2_url_imports from '../public/url_imports/explenation/step_4_2_url_imports.png'
 import framer_step_1 from '../public/url_imports/explenation/framer_step_1.png'
@@ -16,9 +13,7 @@ import framer_step_2 from '../public/url_imports/explenation/framer_step_2.png'
 import framer_step_3 from '../public/url_imports/explenation/framer_step_3.png'
 import framer_step_4 from '../public/url_imports/explenation/framer_step_4.png'
 import framer_step_4_1 from '../public/url_imports/explenation/framer_step_4_1.png'
-import framer_step_5 from '../public/url_imports/explenation/framer_step_5.png'
-import framer_step_6 from '../public/url_imports/explenation/framer_step_6.png'
-import framer_step_6_1 from '../public/url_imports/explenation/framer_step_6_1.png'
+import navigator_not_found from '../public/url_imports/explenation/navigator_not_found.png'
 
 const url_imports = () => {
   return (
@@ -27,7 +22,7 @@ const url_imports = () => {
         <Nav />
         <div className={styles.headerInfo}>
           <h1 className={styles.headerInfo_title}>URL-imports</h1>
-          <p className={styles.headerInfo_text}>Dit is een korte uitleg daarvan om een idee te krijgen, kan ook quote zijn.</p>
+          <p className={styles.headerInfo_text}>Next.js 12 includes experimental support for importing ES Modules through URLs, no install or separate build step is required.</p>
           <Link href="/demos/url_imports/demo"><a className={styles.links_toDemo}>Try out demo</a></Link>
         </div>
       </div>
@@ -43,7 +38,7 @@ const url_imports = () => {
           </div>
           <div className={styles.titleWithText}>
             <h1 className={styles.title}>Why is it great? (or not)</h1>
-            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+            <p className={styles.text}>URL imports allow you to use any package directly through a URL. This enables Next.js to process remote HTTP(S) resources exactly like local dependencies.</p>
           </div>
         </section>
 
@@ -80,7 +75,11 @@ const url_imports = () => {
           <h1 className={styles.title}>How to do this in nextJS?</h1>
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>1: Make sure you are on the latest version of nextJS (nextJS12) by installing the latest version of next with yarn or npm:</p>
-            <div className={styles.picture_url_imports}><Image src={step_1_url_imports} alt='step_1_url_imports' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>add the latest version of nextwith yarn or npm:</p>
+              <p className={styles.copyThis_text}>{`npm install next@12"`}</p>
+              <p className={styles.copyThis_text}>{`yarn add next@12"`}</p>
+            </div>
           </div>
 
 
@@ -97,14 +96,31 @@ const url_imports = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>3: add the allowed URL prefixes inside your next.config.js like below:</p>
-            <div className={styles.picture_url_imports}><Image src={step_3_url_imports} alt='step_3_url_imports' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your next.config.js:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`urlImports: [`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`'https://cdn.skypack.dev',`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`]`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>4: Now search for a library on skypack and import it:</p>
-            <div className={styles.picture_url_imports}><Image src={step_4_url_imports} alt='step_4_url_imports' /></div>
+            <p className={styles.steps_text}>4: Now search for a library on skypack and import it and write your own code for it:</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>This is how the import should look like:</p>
+              <p className={styles.copyThis_text}>{`import yourLibrary from 'https://cdn.skypack.dev/yourLibrary'`}</p>
+            </div>
             <div className={styles.picture_url_imports}><Image src={step_4_1_url_imports} alt='step_4_1_url_imports' /></div>
             <Image src={step_4_2_url_imports} alt='step_4_2_url_imports' />
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>This is how you could trigger your library:</p>
+              <p className={styles.copyThis_text}>{`onClick={yourwrittenFunction}'`}</p>
+            </div>
           </div>
         </section>
 
@@ -154,15 +170,37 @@ const url_imports = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>5: go to your next.config.js and add the following (also do yarn add framer or npm i framer)</p>
-            <div className={styles.picture_url_imports}><Image src={framer_step_5} alt='framer_step_5' /></div>
+            <p className={styles.steps_text}>5: Go to your next.config.js and add the following (also do yarn add framer or npm i framer)</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your next.config.js:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`urlImports: [`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`'https://cdn.skypack.dev',`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://framer.com/m/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://framerusercontent.com/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://ga.jspm.io/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://jspm.dev/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`]`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>6: import and add the link to a file of your choosing and import it like a component </p>
-            <div className={styles.picture_url_imports}><Image src={framer_step_6} alt='framer_step_6' /></div>
-            <Image src={framer_step_6_1} alt='framer_step_6_1' />
           </div>
+          <div className={styles.copyThis}>
+            <p className={styles.copyThis_title}>Add this on top of your file:</p>
+            <p className={styles.copyThis_text}>{`import Test from "https://framer.com/m/Test-gXlx.js@2KpFwcsskFbCiEMKPDm5"`}</p>
+          </div>
+
+          <div className={styles.copyThis}>
+            <p className={styles.copyThis_title}>Add this where you want the component to be placed:</p>
+            <p className={styles.copyThis_text}>{`<Test variant="variant 1"/>`}</p>
+          </div>
+
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
@@ -184,21 +222,63 @@ const url_imports = () => {
             <ul className={styles.list}>
               <li className={styles.text_list}>yarn add or npm install framer</li>
               <li className={styles.text_list}>add the following in your next.config.js</li>
-              <div className={styles.picture_url_imports}><Image src={step_3_url_imports} alt='step_3_url_imports' /></div>
             </ul>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`urlImports: [`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`'https://cdn.skypack.dev',`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`]`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
           <div>
             <p className={styles.steps_text}>Importing skypack in your next.config.js:</p>
             <ul className={styles.list}>
               <li className={styles.text_list}>This is very irritating if you forget it, here is how your next.config.js should look like:</li>
-              <div className={styles.picture_url_imports}><Image src={framer_step_5} alt='framer_step_5' /></div>
             </ul>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your next.config.js:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`urlImports: [`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`'https://cdn.skypack.dev',`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://framer.com/m/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://framerusercontent.com/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://ga.jspm.io/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`"https://jspm.dev/",`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`]`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
+          </div>
+          <div>
+            <p className={styles.steps_text}>Having the error message `ReferenceError: navigator is not defined`:</p>
+            <Image src={navigator_not_found} alt='navigator_not_found' />
+            <ul className={styles.list}>
+              <li className={styles.text_list}>This error is displayed because you are not on the beta version of framer thus you can not use url imports in framer... To fix this implement this in your terminal:</li>
+            </ul>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your terminal:</p>
+              <p className={styles.copyThis_text}>yarn add framer@beta</p>
+            </div>
           </div>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Conclusion</h1>
           <p className={styles.text}>NextJs now natively supports ES modules enabling the industry to transition away from CommonJs module system, but it also introduces such thing as URL imports. You can now easily import 3rd party libraries without installing it through npm.</p>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Want to try it yourself?</h1>
+          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="https://codesandbox.io/s/nervous-keldysh-0oh8h"> codeSandbox link</a> </p>
+          <p className={styles.text}>Here is the demo I made on Github: <a href="https://github.com/GithubMVS/url_imports_nextJS12_demo"> Suspense github link</a> </p>
+          <p className={styles.text}>Here is my full project on github: <a href="https://github.com/GithubMVS/Passion-project_2021-2022"> fullproject github link</a> </p>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>

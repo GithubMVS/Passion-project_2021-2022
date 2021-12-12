@@ -7,10 +7,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 // framer 
-import Test from "https://framer.com/m/Test-gXlx.js@2KpFwcsskFbCiEMKPDm5"
+import Framer from "https://framer.com/m/Test-gXlx.js@2KpFwcsskFbCiEMKPDm5"
 
 // image imports
-import clipboard_image from '../../../public/demos/url_imports/clipboard.svg'
 import confetti_image from '../../../public/demos/url_imports/confetti.svg'
 import goBack from '../../../public/arrow_goBack.svg'
 
@@ -78,20 +77,7 @@ const Demo = () => {
           <button className={styles.url_importDemo_button} onClick={countDown}> countdown 10 seconds </button>
         </div>
 
-        <Test
-          variant="Variant 1"
-        />
-
-        {/* <div className={styles.url_importDemo_full}>
-          <div className={styles.url_importDemo_imageOrNumber_full}>
-            <Image src={clipboard_image} alt='clipboard' />
-          </div>
-          <div className={styles.url_importDemo_explenation}>
-            <h1 className={styles.url_importDemo_explenation_title}>Copy to clipboard</h1>
-            <p className={styles.url_importDemo_explenation_text}>Press the button, get a url, paste it into your browser and you get a surprise: ))</p>
-          </div>
-          <button className={styles.url_importDemo_button} onClick={copyToClipboard}> copy to clipboard </button>
-        </div>*/}
+        <Framer variant="Variant 1" />
       </section>
 
     </div>

@@ -104,8 +104,8 @@ export default function Home() {
               <Image src={url_imports} alt="url_imports" />
             </div>
             <div className={styles.whatsNew_single_explenationFull}>
-              <h1 className={styles.WhatsNew_title}>Url-imports</h1>
-              <p className={styles.WhatsNew_explenation}>Less rendering on the client</p>
+              <h1 className={styles.WhatsNew_title}>Url-imports/ES modules</h1>
+              <p className={styles.WhatsNew_explenation}>Next.js 12 includes experimental support for importing ES Modules through URLs, no install or separate build step is required. URL imports allow you to use any package directly through a URL. This enables Next.js to process remote HTTP(S) resources exactly like local dependencies.</p>
               <ul className={styles.benefits}>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Import modules from external servers</li>
                 <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>No more importing from the local disk</li>
@@ -122,11 +122,11 @@ export default function Home() {
             <h1 className={styles.displayNone}>Suspense</h1>
             <div className={styles.whatsNew_single_explenationFull}>
               <h1 className={styles.WhatsNew_title}>Suspense</h1>
-              <p className={styles.WhatsNew_explenation}></p>
+              <p className={styles.WhatsNew_explenation}>Suspense is a component that wraps your own custom components. It lets your components communicate to React that they’re waiting for some data to load before the component is rendered. It prevents your components from rendering to the DOM until some asynchronous operationis completed.</p>
               <ul className={styles.benefits}>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Load data asynchronously</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Not load all or nothing!</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>The ability to show the most important content first</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/suspense"><a className={styles.links_learnMore}>learn more</a></Link>

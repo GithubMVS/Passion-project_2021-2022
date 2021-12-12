@@ -89,7 +89,7 @@ const Suspense = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>5: If you have done that, go to your folder where you want use the Suspense, import suspensen from react. Also import the seperate component from step 3</p>
+            <p className={styles.steps_text_special}>5: If you have done that, go to your folder where you want use the Suspense, import suspens from react. Also import the seperate component from step 3</p>
             <div className={styles.picture_url_imports}><Image src={step_5_howTo} alt='step_5_howTo' /></div>
           </div>
 
@@ -202,8 +202,9 @@ const Suspense = () => {
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Want to try it yourself?</h1>
-          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="url"> codeSandbox link</a> </p>
-          <p className={styles.text}>Here is the demo I made on Github: <a href="url"> github link</a> </p>
+          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="https://codesandbox.io/s/hardcore-field-tbfqx"> codeSandbox link</a> </p>
+          <p className={styles.text}>Here is the demo I made on Github: <a href="https://github.com/GithubMVS/SuspenseForDatafetching_react18_demo"> Suspense github link</a> </p>
+          <p className={styles.text}>Here is my full project on github: <a href="https://github.com/GithubMVS/Passion-project_2021-2022"> fullproject github link</a> </p>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
@@ -217,7 +218,7 @@ const Suspense = () => {
             <li className={styles.text_list}>https://nextjs.org/blog/next-12#url-imports</li>
             <li className={styles.text_list}>https://medium.com/@rolyuhh/nextjs-v12-in-a-nutshell-df1e9bbdf260</li>
             <li className={styles.text_list}>https://betterprogramming.pub/5-new-killer-features-of-next-js-12-dfd1d766b539</li>
-            <li className={styles.text_list}>https://reactjs.org/docs/concurrent-mode-suspense.html</li>
+            <li className={styles.text_list}>https://blog.logrocket.com/react-suspense-for-data-fetching/</li>
           </ul>
         </section>
 

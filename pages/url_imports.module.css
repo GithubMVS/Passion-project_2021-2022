@@ -136,4 +136,25 @@
   line-height: 3rem;
 }
 
-/* */
+.copyThis {
+  background-color: #ededed;
+  width: auto;
+  padding: 2.5rem;
+  border-radius: .5rem;
+  margin-top: 3rem;
+}
+
+.copyThis_text {
+  color: #4271ae;
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  padding: .5rem 0rem;
+  font-weight: 300;
+}
+
+.copyThis_title {
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  font-weight: 700;
+}
