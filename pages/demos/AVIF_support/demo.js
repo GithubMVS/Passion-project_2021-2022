@@ -19,7 +19,7 @@ const Demo = () => {
     <div className={styles.AVIF_format_full}>
       <div className={styles.goBack__full}>
         <Image src={goBack} alt='goBack' />
-        <Link href="/allDemos"><a className={styles.links_learnMore}>See other demos</a></Link>
+        <Link href="/"><a className={styles.links_learnMore}>See other demos</a></Link>
       </div>
 
       <div className={styles.AVIF_format_titleAndText}>

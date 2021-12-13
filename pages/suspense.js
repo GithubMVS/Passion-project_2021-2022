@@ -11,7 +11,6 @@ import step_3_howTo from '../public/suspense/step_3_howTo.png'
 import step_4_howTo from '../public/suspense/step_4_howTo.png'
 import step_5_howTo from '../public/suspense/step_5_howTo.png'
 import step_6_howTo from '../public/suspense/step_6_howTo.png'
-import step_7_howTo from '../public/suspense/step_7_howTo.png'
 
 const Suspense = () => {
   return (
@@ -72,6 +71,15 @@ const Suspense = () => {
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>1: First you check if you are on the latest version of nextJS(nextJS12) if you are, then add `concurrentFeatures` to your next.config like this:</p>
             <div className={styles.picture_url_imports}><Image src={step_1_howTo} alt='step_1_howTo' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`concurrentFeatures: true `}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
@@ -81,26 +89,45 @@ const Suspense = () => {
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>3: Then make a folder called API.js and fetch your data, My code looked like this:</p>
             <div className={styles.picture_url_imports}><Image src={step_3_howTo} alt='step_3_howTo' /></div>
+            <li className={styles.text_list}>You can find the code for this <bold><a href="https://codesandbox.io/s/kind-darkness-wsby3?file=/api.js">here</a></bold></li>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>4: Once you got that part done make a seperate component (not needed but good practice) where you integrate your api/database code and code the part you want to make in here, in my case this was a list of comments for an acticle. Also notice that I import that API component here. Mine looked like this:</p>
             <div className={styles.picture_url_imports}><Image src={step_4_howTo} alt='step_4_howTo' /></div>
+            <li className={styles.text_list}>You can also find the code for this here in the `components` folder <bold><a href="https://codesandbox.io/s/kind-darkness-wsby3?file=/api.js">here</a></bold></li>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>5: If you have done that, go to your folder where you want use the Suspense, import suspens from react. Also import the seperate component from step 3</p>
             <div className={styles.picture_url_imports}><Image src={step_5_howTo} alt='step_5_howTo' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Here is my code:</p>
+              <p className={styles.copyThis_text}>{`import { Suspense } from 'react'`}</p>
+              <p className={styles.copyThis_text}>{`import FetchComments from '../../../components/demos/Suspense/FetchComments'`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>6: Now wrap suspense around your component that contains the database, api or just data integration, note that in my example I don’t wrap my full component with suspense because I want the other parts to load already while my comments (which usually take longer to load) are loading, here is my example:</p>
             <div className={styles.picture_url_imports}><Image src={step_6_howTo} alt='step_6_howTo' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this where needed:</p>
+              <p className={styles.copyThis_text}>{`<Suspense>`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`<FetchComments />`}</p>
+              <p className={styles.copyThis_text}>{`</Suspense>`}</p>
+
+            </div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>7: Bonus: give your loading suspense a fallback that replaces the loading data with a costum p or h1 (or whatever you want to use) text or you can even import a component where you madde a costum animation like below </p>
-            <div className={styles.picture_url_imports}><Image src={step_7_howTo} alt='step_7_howTo' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Like this:</p>
+              <p className={styles.copyThis_text}>{`<Suspense fallback={<p>Loading...</p>}>`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`<FetchComments />`}</p>
+              <p className={styles.copyThis_text}>{`</Suspense>`}</p>
+            </div>
           </div>
         </section>
 
@@ -185,6 +212,15 @@ const Suspense = () => {
               <li className={styles.text_list}>This one is a pretty simple one, but easy to forget. Because suspense for datafetching is still experimental (and concurrent mode also is) you need to activate concurrent mode in your next.config.js fille by typing: `concurrentFeatures: true`. There is also an example below this.</li>
             </ul>
             <div className={styles.picture_url_imports}><Image src={step_1_howTo} alt='step_1_howTo' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this in the next.config.js file:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`concurrentFeatures: true `}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
 
           <div>
