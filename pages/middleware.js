@@ -10,6 +10,9 @@ import explenation_1 from '../public/middleware_pictures/explenation_1.png'
 import explenation_2 from '../public/middleware_pictures/explenation_2.png'
 import explenation_3 from '../public/middleware_pictures/explenation_3.png'
 import explenation_4 from '../public/middleware_pictures/explenation_4.png'
+import show_react18 from '../public/middleware_pictures/show_react18.png'
+import fault_next_server_sub_directory from '../public/middleware_pictures/fault_next_server_sub_directory.png'
+import fault_sub_directory_middleware from '../public/middleware_pictures/fault_sub_directory_middleware.png'
 
 const middleware = () => {
   return (
@@ -34,7 +37,7 @@ const middleware = () => {
           </div>
           <div className={styles.titleWithText}>
             <h1 className={styles.title}>Why is it great? (or not)</h1>
-            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+            <p className={styles.text}>You can run code before a request is made meaning that you can change, redirect or even stream html. This is very exciting because not only can you do that the middleware also runs on all pages (and in subdirectories only effecting the pages in the subdirectory) meaning that it is write once works everywhere. </p>
           </div>
         </section>
 
@@ -93,7 +96,7 @@ const middleware = () => {
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Bonus: What are edge functions</h1>
-          <p className={styles.text}>When deploying your middleware on vercel, vercel makes edge functions from your middleware. Noww what are edge functions. They are middleware that is deployed all around the world. So when someone tries your application with middleware they fetch that code from the server which is geoghraphicly closed to you so this means it is lightning fast which opens up the ability to make your pages dynamic with middleware and make it fast with edge functions! Here are some guys on twitter who also explain it very well.</p>
+          <p className={styles.text}>When deploying your middleware on Vercel, Vercel makes edge functions from your middleware. Noww what are edge functions. They are middleware that is deployed all around the world. So when someone tries your application with middleware they fetch that code from the server which is geoghraphicly closed to you so this means it is lightning fast which opens up the ability to make your pages dynamic with middleware and make it fast with edge functions! Here are some guys on twitter who also explain it very well.</p>
           <div className={styles.picture_url_imports}><Image src={explenation_1} alt='explenation_1' /></div>
           <div className={styles.picture_url_imports}><Image src={explenation_2} alt='explenation_2' /></div>
           <div className={styles.picture_url_imports}><Image src={explenation_3} alt='explenation_3' /></div>
@@ -117,9 +120,24 @@ const middleware = () => {
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Some challenges I faced, and how I fixed them:</h1>
           <div>
-            <p className={styles.steps_text}>Could not get when my site online on vercel middleware was in a sub directory</p>
+            <p className={styles.steps_text}>Using middleware in a sub directory [solved]</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>...</li>
+              <li className={styles.text_list}>With this bug I tried everything from: map structure, map naming, faults in css processor, typo, etc... but nothing helped...  the weird part was it worked on my localhost but it didn`t work in production in Vercel, there was also this weird thing that if I put the middleware in my man folder it would work perfectly both in production and on localhost but I obviously did not want that so I kept searching for the bug. Now since I knew the bug was only in production and continuously debugging and pushing to production isn`t really a clean method to work with I made a second website with exactly the same content and I pushed that to production because this version wasn`t really important or linked to other important things, it was basically a (debug) playing field. Now after continuously searching for the bug for a couple of days I finally found it!.<Image src={fault_sub_directory_middleware} alt='fault_sub_directory_middleware' /> <br></br> <br></br>A big part of my project is the integration of the alpha version of react 18, this is still experimental and to use this u need to add server components and concurrent mode in the next.config.js like below:<br></br><Image src={show_react18} alt='show_react18' /><br></br><br></br> Now after trying a 100 things I got they idea that maybe the fault was in the next.config (spoiler alert it was). So after replacing my edited next.config to a standard version and pushing to production I noticed that it worked, now here is the problem, like I said to make react 18's work you need to activate server components and concurrent mode in the next.config.js now because middleware is in beta and react 18 is in alpha, it seems that these 2 don't really work well together as they should... Basically the 2 work separately but not both in the same project, it is either A or B. So if you remove the server components and concurrent mode in the next.config.js. You should be fine and the error (see below) should be fine.</li>
+            </ul>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>To make this work your next.config.js should look like this:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Using next/server in a sub directory [solved]</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>Like the picture below you can see that I had the problem that I couldn`t use next/server in a subdirectory, now that was very weird because on some of the examples Vercel gave on middleware they used next/server in subdirectories. Then it hit me... They probably modified the files to let it work in subdirectories.<Image src={fault_next_server_sub_directory} alt='fault_next_server_sub_directory' /> <br></br><br></br>Now the way I fixed this was that I copied a file where it worked from an example that Vercel gave us, removed all the unnecessary files and replaced them with my own. It shouldn`t always be hard to solve a problem :).</li>
+              <br></br>
+              <li className={styles.text_list}>You can find an empty demo for this <bold><a href="​https://codesandbox.io/s/dazzling-wozniak-imw17">here</a></bold></li>
             </ul>
           </div>
         </section>
@@ -131,6 +149,7 @@ const middleware = () => {
             <li className={styles.text_list}>https://javascript.plainenglish.io/middleware-in-next-js-12-what-are-they-and-how-to-get-started-with-them-2bce9ae073eb </li>
             <li className={styles.text_list}>https://nextjs.org/blog/next-12#introducing-middleware</li>
             <li className={styles.text_list}>https://www.youtube.com/watch?v=RaaSmWPmjM0</li>
+            <li className={styles.text_list}>https://blog.anishde.dev/middleware-in-nextjs-12-what-are-they-and-how-to-get-started-with-them#comments-list</li>
           </ul>
         </section>
 
