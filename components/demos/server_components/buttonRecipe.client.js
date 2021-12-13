@@ -1,6 +1,7 @@
 import { IdContext } from "./IdContext.client"
 
-const ButtonRecipe = () => {
+const ButtonRecipe = (idRecipe) => {
+  console.log(idRecipe)
   return (
     <>
       <IdContext.Provider value="idValue">

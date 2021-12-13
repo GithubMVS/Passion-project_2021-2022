@@ -95,7 +95,7 @@ const server_components = () => {
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>What is static site generation and server-side generation?</h1>
+          <h1 className={styles.title}>How is this different from static site generation and server-side generation??</h1>
           <p className={styles.text}>This new approach to data fetching and rendering in general is fundamentally different from already known getStaticProps or get ServerSideProps, etc from previous versions of NextJs. This new approach to rendering the website per component level gives us a more efficient way to cache content and stream data as it flows rather than render it after some period of time all at once (meaning there will no longer be such thing as either all cache at once or no cache at all).</p>
         </section>
 
@@ -143,6 +143,12 @@ const server_components = () => {
               <li className={styles.text_list}>...</li>
             </ul>
           </div>
+        </section>
+
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>My opinion</h1>
+          <p className={styles.text}>While the concept is really promessing and really cool, I wouldn`t recommend using it right now because it has a lot bugs coming with it like fetching data in a server component is still really buggy... I would rather recommend for really learning the theory behind it and using it in a couple of months when they release a stable version of react server components.</p>
         </section>
 
 
