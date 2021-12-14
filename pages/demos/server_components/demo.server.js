@@ -7,9 +7,9 @@ import GoBackButton from '../../../components/demos/server_components/goBackButt
 
 const Demo = () => {
   return (
-    <div style={{ height: "100%", backgroundColor: "#F8F9FDs", display: "grid", gridTemplateColumns: "auto" }}>
+    <div style={{ height: "100%", backgroundColor: "#F8F9FD", display: "grid", gridTemplateColumns: "auto", gridTemplateRows: "1fr 75rem auto" }}>
       <GoBackButton />
-      <div style={{ padding: "18 % 20rem" }}>
+      <div>
         <RecipeDetails />
       </div>
       <div style={{ backgroundColor: "#F2F2F2", padding: "0rem 20rem" }}>

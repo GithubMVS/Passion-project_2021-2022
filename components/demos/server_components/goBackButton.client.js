@@ -13,7 +13,7 @@ const GoBackButton = () => {
   return (
     <div className={styles.goBack__full}>
       <Image src={goBack} alt='goBack' />
-      <Link href="/"><a className={styles.links_learnMore}>See other demos</a></Link>
+      <a className={styles.links_learnMore}><Link href="/">See other demos</Link></a>
     </div>
   )
 }
