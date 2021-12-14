@@ -5,12 +5,17 @@ import RecipeDetails from '../../../components/demos/server_components/detailRec
 // client components imports
 import GoBackButton from '../../../components/demos/server_components/goBackButton.client'
 
-const Demo = () => {
+//  ? parseInt(router.route.slice(1)) : 1
+
+const Demo = ({ router }) => {
+  const route = router?.route
+  const selectedId = route.slice(25)
+  console.log(selectedId)
   return (
     <div style={{ height: "100%", backgroundColor: "#F8F9FDs", display: "grid", gridTemplateColumns: "auto" }}>
       <GoBackButton />
       <div style={{ padding: "18 % 20rem" }}>
-        <RecipeDetails />
+        <RecipeDetails selectedId={selectedId} />
       </div>
       <div style={{ backgroundColor: "#F2F2F2", padding: "0rem 20rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>

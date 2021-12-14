@@ -1,0 +1,19 @@
+.full_recipe_button {
+  width: 100%;
+  padding: 2rem;
+  border-radius: .5rem;
+  background-color: var(--colorPurple);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-family-Inter);
+  margin-top: 3rem;
+}
+
+.full_recipe_text {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-family-Inter);
+  line-height: 2.42rem;
+}
