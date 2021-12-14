@@ -153,3 +153,176 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+@media screen and (max-width: 1280px) {
+  .homepage__full_title {
+    padding: 10rem 0rem 0rem 0rem;
+  }
+
+  .homepage__full {
+    padding: 0rem 10rem;
+  }
+
+  .itsFast_full_gradient {
+    font-size: 20rem;
+  }
+
+  .whatsNew__total_title {
+    padding: 10rem 0rem 0rem 0rem;
+    font-size: 7.5rem;
+    line-height: 9rem;
+  }
+
+  .whatsNew__total_text {
+    padding: 3rem 0rem 10rem 0rem;
+  }
+
+  .whatsNew_single {
+    padding: 10rem 0rem
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homepage__full_title {
+    padding: 15rem 0rem 0rem 0rem;
+  }
+
+  .itsFast_full_gradient {
+    font-size: 15rem;
+  }
+
+  .whatsNew__total_title {
+    width: 100%;
+  }
+
+  .whatsNew_single {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10rem;
+    grid-template-rows: 1fr 1fr;
+    height: 75%;
+  }
+
+  .whatsNew__single_image {
+    grid-row: 2;
+  }
+
+  .whatsNew_single_explenationFull {
+    grid-row: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage__full_title {
+    font-size: 6.5rem;
+    width: 100%;
+    line-height: 8.5rem;
+    padding: 17.5rem 0rem 0rem 0rem;
+  }
+
+  .itsFast_full_gradient {
+    font-size: 12.5rem;
+  }
+
+  .homepage__full {
+    padding: 0rem 7.5rem;
+  }
+
+  .whatsNew__total_title {
+    font-size: 5rem;
+    line-height: 6.5rem;
+  }
+
+  .whatsNew__total_text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homepage__full {
+    padding: 0rem 5rem;
+  }
+
+  .homepage__full_title {
+    font-size: 4.5rem;
+    width: 100%;
+    line-height: 6rem;
+    padding: 7.5rem 0rem 0rem 0rem;
+  }
+
+  .itsFast_full_title {
+    font-size: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .itsFast_full_gradient {
+    font-size: 7rem;
+  }
+
+  .whatsNew__total_title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .whatsNew__total_text {
+    padding: 3rem 0rem 5rem 0rem;
+    line-height: 2.5rem;
+  }
+
+  .whatsNew_single {
+    padding: 5rem 0rem;
+  }
+
+  .WhatsNew_title {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .WhatsNew_explenation {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .benefits {
+    grid-row-gap: 1.5rem;
+  }
+
+  .benefit {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .links_demo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .links_learnMore {
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .whatsNew_single {
+    grid-template-rows: auto 1fr;
+    height: 50%;
+    grid-row-gap: 5rem;
+    height: initial;
+  }
+
+  .whatsNew__single_image {
+    grid-row: 1;
+  }
+
+  .whatsNew_single_explenationFull {
+    grid-row: 2;
+  }
+}

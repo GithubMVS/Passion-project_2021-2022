@@ -77,8 +77,8 @@ const url_imports = () => {
             <p className={styles.steps_text_special}>1: Make sure you are on the latest version of nextJS (nextJS12) by installing the latest version of next with yarn or npm:</p>
             <div className={styles.copyThis}>
               <p className={styles.copyThis_title}>add the latest version of nextwith yarn or npm:</p>
-              <p className={styles.copyThis_text}>{`npm install next@12"`}</p>
-              <p className={styles.copyThis_text}>{`yarn add next@12"`}</p>
+              <p className={styles.copyThis_text}>{`npm install next@12`}</p>
+              <p className={styles.copyThis_text}>{`yarn add next@12`}</p>
             </div>
           </div>
 
