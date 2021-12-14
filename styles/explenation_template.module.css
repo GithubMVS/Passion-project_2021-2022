@@ -161,6 +161,14 @@
   font-weight: 300;
 }
 
+.copyThis_text_forMobile {
+  color: #4271ae;
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  padding: .5rem 0rem;
+  font-weight: 300;
+}
+
 .copyThis_title {
   padding-bottom: 1.5rem;
   font-size: 2rem;
@@ -189,4 +197,115 @@
 
 .special_text {
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .headerInfo_title {
+    font-size: 5rem;
+  }
+
+  .headerInfo_text {
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .oneXtwo {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+    padding: 5rem 0rem;
+  }
+
+  .spaceBetweenExplenation {
+    padding: 5rem 0rem;
+  }
+
+  .explenation {
+    padding: 0rem 12.5%;
+  }
+
+  .header {
+    padding: 0rem 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerInfo {
+    padding: 5rem 0rem;
+  }
+
+  .headerInfo_text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 85%;
+  }
+
+  .header {
+    padding: 0rem 5rem;
+  }
+
+  .oneXtwo {
+    padding: 5rem 0rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .explenation {
+    padding: 0rem 10%;
+  }
+
+  .text {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .steps_text_special {
+    padding: 2rem 0rem 1rem 0rem;
+    width: 100%;
+    line-height: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .copyThis {
+    margin-top: 1.5rem;
+  }
+
+  .copyThis_title {
+    font-size: 1.75rem;
+  }
+
+  .copyThis_text {
+    font-size: 1.75rem;
+  }
+
+  .copyThis_text_forMobile {
+    font-size: 1rem;
+  }
+
+  .steps_text {
+    padding: 2rem 0rem 1rem 0rem;
+    width: 100%;
+    line-height: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .text_list {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .title_special {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+
+  .explenation_Part_list {
+    padding-bottom: 3rem;
+  }
 }

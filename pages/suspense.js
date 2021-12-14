@@ -104,7 +104,7 @@ const Suspense = () => {
             <div className={styles.copyThis}>
               <p className={styles.copyThis_title}>Here is my code:</p>
               <p className={styles.copyThis_text}>{`import { Suspense } from 'react'`}</p>
-              <p className={styles.copyThis_text}>{`import FetchComments from '../../../components/demos/Suspense/FetchComments'`}</p>
+              <p className={styles.copyThis_text_forMobile}>{`import FetchComments from '../../../components/demos/Suspense/FetchComments'`}</p>
             </div>
           </div>
 
