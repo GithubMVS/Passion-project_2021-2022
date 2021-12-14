@@ -108,6 +108,15 @@
   line-height: 3.5rem;
 }
 
+.text_list_special {
+  font-size: 2rem;
+  font-family: var(--font-family-Inter);
+  color: var(--colorBlack);
+  font-weight: 500;
+  line-height: 3.5rem;
+  margin-top: 3rem;
+}
+
 .explenation_Part_list {
   padding-bottom: 5rem;
 }
@@ -119,12 +128,12 @@
 
 .steps_text {
   padding: 5rem 0rem 1rem 0rem;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 600;
   width: 75%;
   font-family: var(--font-family-Inter);
   color: var(--colorBlack);
-  line-height: 3rem;
+  line-height: 3.25rem;
 }
 
 .steps_text_special {
@@ -176,4 +185,8 @@
   font-weight: 700;
   width: 75%;
   line-height: 4rem;
+}
+
+.special_text {
+  font-weight: 700;
 }

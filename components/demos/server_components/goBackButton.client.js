@@ -1,11 +1,10 @@
 import React from 'react'
 
-// next imports
-import Image from 'next/image'
-
 // images 
 import goBack from '../../../public/arrow_goBack.svg'
 
+// next imports
+import Image from 'next/image'
 
 const GoBackButton = () => {
   return (

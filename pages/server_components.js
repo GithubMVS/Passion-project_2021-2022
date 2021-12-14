@@ -8,6 +8,23 @@ import Image from 'next/image'
 import serverSide from '../public/server_components/Server_side_generation.png'
 import staticGeneration from '../public/server_components/Static_site_generation.png'
 
+// images of mistakes here
+import elementTypeInvalid2_1 from '../public/server_components/fault_2.1.png'
+import elementTypeInvalid2_2 from '../public/server_components/fault_2.2.png'
+
+import reactHyderation_1 from '../public/server_components/react_hydration_1.1.png'
+import reactHyderation_2 from '../public/server_components/react_hydration_1.2.png'
+import reactHyderation_3 from '../public/server_components/react_hydration_1.3.png'
+import reactHyderation_4 from '../public/server_components/react_hydration_1.4.png'
+
+import noCssUseJSX_1 from '../public/server_components/fault_3.1.png'
+import noCssUseJSX_2 from '../public/server_components/fault_3.2.png'
+import noCssUseJSX_4 from '../public/server_components/fault_3.4.png'
+
+import not_a_function_1 from '../public/server_components/not_a_function_1.png'
+import not_a_function_2 from '../public/server_components/not_a_function_2.png'
+
+
 const server_components = () => {
 
   return (
@@ -86,7 +103,7 @@ const server_components = () => {
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.quote}>`Now you can choose which parts you want to render with the server instead of all or nothing.`</h1>
+          <h1 className={styles.quote}>`Now you can choose which parts you want to render, and how. Instead of all or nothing.`</h1>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
@@ -138,10 +155,78 @@ const server_components = () => {
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Some challenges I faced, and how I fixed them:</h1>
           <div>
-            <p className={styles.steps_text}>Fetchning data from an api without using state</p>
+            <p className={styles.steps_text}>Fetching data from an api without using state (.fetch is not a function error)</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>...</li>
+              <li className={styles.text_list}>This one didn`t get fixed but I wanted to show it anyway, in the examples of server components the react 18 dev team showed they used `react-fetch` for fetching their data. When first installing it with yarn and then trying to use it for myself I got the following error `react_fetch__WEBPACK is not a function`, it seems that react fetch is not yet fully working well with webpack as of december 2021. </li>
             </ul>
+            <div className={styles.picture_url_imports}><Image src={not_a_function_1} alt='not_a_function_1' /></div>
+            <div className={styles.picture_url_imports}><Image src={not_a_function_2} alt='not_a_function_2' /></div>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Forgetting the import with expermimental of concurrentComponents and serverComponents and adding the react18alpha</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>don`t forget this, because this makes sure that you can use react18`s alpha, it is really important that you add `concurrentComponents` and `serverComponents` in your next.config.js after you added react18alpha ofcours.</li>
+            </ul>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your next.config.js:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`concurrentFeatures: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`serverComponents: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
+
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this in your terminal:</p>
+              <p className={styles.copyThis_text}>{`npm install react@alpha react-dom@alpha`}</p>
+              <p className={styles.copyThis_text}>{`# or`}</p>
+              <p className={styles.copyThis_text}>{`yarn add react@alpha react-dom@alpha`}</p>
+            </div>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Using css modules or vanilla css in server components error</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>This one is also pretty simple as of December 2021, while server components are still in alpha, vanilla css and css modules are not supported yet and don`t work when you use them. <span className={styles.special_text}> Now here is how you use css in server components anyway:</span> just use jsx styling in the component itself (like the picture below) this will work fine, both on the localhost as in production. It does look messy but it solves the problem.</li>
+            </ul>
+            <li className={styles.text_list_special}>This is doesn`t work:</li>
+            <div className={styles.picture_url_imports}><Image src={noCssUseJSX_1} alt='noCssUseJSX_1' /></div>
+            <div className={styles.picture_url_imports}><Image src={noCssUseJSX_2} alt='noCssUseJSX_2' /></div>
+            <li className={styles.text_list_special}>This does work:</li>
+            <div className={styles.picture_url_imports}><Image src={noCssUseJSX_4} alt='noCssUseJSX_4' /></div>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Using css (modules) in client components that you later import in server components (react hydration error)</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>This problem was caused because I used a `Link` in a client component that I later imported in a server component, now because you can`t use state or Link in server components (despite the fact that it was in a client component) it bugged out because there was a `Link` imported in a server component via a client component, normally this should be fine but since server components are still in alpha this tends to bug out.<span className={styles.special_text}> Now here is how you fix it:</span> the `GoBackButton` was a client component with a Link in it, to fix it simply put a `{"<a></a>"}` tag with a href to the page you want it to go to. (and ps: use jsx styling to style it because vanilla css and css modules bug out as of December 2021)</li>
+            </ul>
+            <div className={styles.picture_url_imports}><Image src={reactHyderation_1} alt='reactHyderation_1' /></div>
+            <li className={styles.text_list}>This is the server component:</li>
+            <div className={styles.picture_url_imports}><Image src={reactHyderation_2} alt='reactHyderation_2' /></div>
+            <li className={styles.text_list}>This is the client component with the Link in it (will give an error): </li>
+            <div className={styles.picture_url_imports}><Image src={reactHyderation_3} alt='reactHyderation_3' /></div>
+            <li className={styles.text_list}>And this is how you should change it:</li>
+            <div className={styles.picture_url_imports}><Image src={reactHyderation_4} alt='reactHyderation_4' /></div>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Dissapearing css when refreshing while using vanilla css or css modules in client components</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>Because react server components are still in alpha there a lot of bugs that come with it... One of them is if you try to add vanilla css or css modules to a client component that you later add to a server component that it bugs out when refreshing, also as of December 2021 it is not recommended to use vanilla css or css modules in client or server components, use JSX styling instead.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className={styles.steps_text}>Element Type is invalid.</p>
+            <ul className={styles.list}>
+              <li className={styles.text_list}>This was a simple bug but something you can easily forget, when using extensions like `react snippets` you can auto generate your component tree and because you used `example.client.js` or `example.server.js` your component is going to automatically be called example.client or example.server when removing them be sure to remove them both. In the picture below you can see me forgetting to remove the `.client`.</li>
+            </ul>
+            <div className={styles.picture_url_imports}><Image src={elementTypeInvalid2_1} alt='elementTypeInvalid2_1' /></div>
+            <div className={styles.picture_url_imports}><Image src={elementTypeInvalid2_2} alt='elementTypeInvalid2_2' /></div>
           </div>
         </section>
 
