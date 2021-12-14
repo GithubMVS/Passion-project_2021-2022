@@ -9,6 +9,7 @@
   font-weight: 700;
   font-family: var(--font-family-Inter);
   margin-top: 3rem;
+  text-decoration: none;
 }
 
 .full_recipe_text {

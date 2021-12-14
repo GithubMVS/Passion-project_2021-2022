@@ -11,10 +11,11 @@ const RecipeList = () => {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridColumnGap: '5rem', gridRowGap: "3rem", paddingBottom: "10rem" }}>
       {recipes.map(recipe => (
-        <div key={recipe.id} style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '.5rem' }}>
+        <div key={recipe.id} style={{ backgroundColor: 'white', borderRadius: '.5rem' }}>
           <Recipe {...recipe} />
         </div>
-      ))}
+      ))
+      }
     </div >
   )
 }

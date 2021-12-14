@@ -31,7 +31,7 @@ export const recipes = [
 
   {
     id: 2,
-    title: 'Good sereal ',
+    title: 'Good Cereal ',
     image: 'test',
     recipeText: 'Step 1: get a bowl, step 2: get your cereal and put it in the bowl, step 3: add the sugar, step 4: mix very long (at least 2 minutes [very important], step 5: add the milk, step 6 enjoy!)',
     recipeType: 'Dinner',
