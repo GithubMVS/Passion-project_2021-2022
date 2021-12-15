@@ -12,6 +12,11 @@ import step_4_howTo from '../public/suspense/step_4_howTo.png'
 import step_5_howTo from '../public/suspense/step_5_howTo.png'
 import step_6_howTo from '../public/suspense/step_6_howTo.png'
 
+// demo explained
+import suspense_1 from '../public/suspense/suspense_1.png'
+import suspense_7 from '../public/suspense/suspense_7.png'
+import suspense_10 from '../public/suspense/suspense_10.png'
+
 const Suspense = () => {
   return (
     <div className={styles.fullExplenation}>
@@ -134,6 +139,52 @@ const Suspense = () => {
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>The demo explained</h1>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>1: In this demo you will see a self made replica of wat an “artikel” could look like.</p>
+            <div className={styles.picture_url_imports}><Image src={suspense_1} alt='suspense_1' /></div>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>2: Now in artikels there could be comments sometimes even 10000 of them.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>3: Now if you click on an article you don’t want to wait for the 10000 comments to load before you can read the artikel…</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>4: You want to first be able to read the artikel and then maybe read the comments if you are interested.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>5: This is the problem we solved with this demo.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>6: Things like comments in this case or heavy api / database data can take a while to load.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>7: Now normally you have a thing called waterfall where in this case, first the artikel would have to load, then the comments would load, then something else, something else, etc…</p>
+            <div className={styles.picture_url_imports}><Image src={suspense_7} alt='suspense_7' /></div>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>8: Now with suspense for datafetching you can load both the artikel and the comments at the same time and because the comments tend to take longer to load you can already display the rendered artikel so that the user can start reading while the bigger fetch of the comments in this case is still loading, this makes loading time shorter and gives a better UX experience.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>9: With other words you can now asynchronously load data.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>10: And to show the user that the data is loading you can give the `Suspense` a fallback, which can be text, a loading animation whatever suits your need.</p>
+            <div className={styles.picture_url_imports}><Image src={suspense_10} alt='suspense_10' /></div>
+          </div>
+
+
+
         </section>
 
 
