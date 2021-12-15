@@ -15,9 +15,8 @@ const Demo = ({ router }) => {
         <RecipeDetails selectedId={selectedId} />
       </div>
       <div style={{ backgroundColor: "#F2F2F2", padding: "0rem 20rem" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div>
           <h1 style={{ color: "#16161E", fontSize: "5rem", fontWeight: "700", fontFamily: "Neue Montreal, Helvetica, sans-serif, Arial", padding: "5rem 0rem" }}>Popular recipes</h1>
-          <p>zoekbalk</p>
         </div>
         <Recipes />
       </div>

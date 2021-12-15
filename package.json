@@ -9,13 +9,14 @@
   },
   "dependencies": {
     "contentful": "^9.1.5",
-    "date-fns": "^2.26.0",
     "framer": "^2.0.0-beta.13",
     "framer-motion": "^5.3.3",
+    "moment": "^2.29.1",
     "next": "12",
     "nookies": "^2.5.2",
     "react": "^0.0.0-experimental-0cc724c77-20211125",
-    "react-dom": "^0.0.0-experimental-0cc724c77-20211125"
+    "react-dom": "^0.0.0-experimental-0cc724c77-20211125",
+    "simple-rating-stars": "^1.6.0"
   },
   "devDependencies": {
     "eslint": "7",

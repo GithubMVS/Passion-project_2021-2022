@@ -24,7 +24,7 @@ const Demo = () => {
 
       <div className={styles.AVIF_format_titleAndText}>
         <h1 className={styles.AVIF_format_full_title}>AVIF image format demo</h1>
-        <p className={styles.AVIF_format_full_text}>This is a new image format now supported by nextJS12 that is 20% lighter than webP, really revelutionary. In this demo we will show you 6 4K images, and we’ll show how easy they render in because of how light they are. Now please check your browser because as of December 12th 2021, they are not supported in safari and older browser. Ofcours a fallback to webP and jpeg if needed. All images are from pexels.com</p>
+        <p className={styles.AVIF_format_full_text}>This is a new image format now supported by nextJS12 that is 20% lighter than webP, really revolutionary. In this demo we will show you 6 4K images, and we’ll show how easy they render in because of how light they really are... Now please check your browser because as of December 12th 2021, they are not supported in safari or older browsers. All images are from pexels.com and the credits to the artist will be shown below.</p>
       </div>
       <div className={styles.AVIF_format_full_images}>
         <Image src={auto} alt='auto' />
