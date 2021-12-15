@@ -14,6 +14,7 @@ import checkMark from '../public/homePage/checkMark.svg'
 import url_imports from '../public/homePage/url_imports.png'
 import server_components from '../public/homePage/server_components.png'
 import Suspense from '../public/homePage/Suspense.png'
+import AVIf from '../public/homePage/AVIF_image_format.jpg'
 
 export default function Home() {
   return (
@@ -61,15 +62,15 @@ export default function Home() {
           <section className={styles.whatsNew_single}>
             <h1 className={styles.displayNone}>AVIF image format</h1>
             <div className={styles.whatsNew__single_image}>
-              <p>replace with Image here</p>
+              <Image src={AVIf} alt="AVIf" />
             </div>
             <div className={styles.whatsNew_single_explenationFull}>
               <h1 className={styles.WhatsNew_title}>AVIF image format</h1>
-              <p className={styles.WhatsNew_explenation}>text with explenation</p>
+              <p className={styles.WhatsNew_explenation}>Avif image format is a relative new image format that is really light. Now the nextJS built-in Image Optimization API now supports AVIF images, enabling 20% smaller images compared to WebP. Which accounts for better UX for the end user!</p>
               <ul className={styles.benefits}>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point one</li>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point two</li>
-                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>good point three</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Up to 80% lighter then jpg`s</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Are not supported on all major browsers (bad point)</li>
+                <Image src={checkMark} alt="checkMark" /><li className={styles.benefit}>Can take longer to optimize as webP (bad point)</li>
               </ul>
               <div className={styles.links}>
                 <Link href="/AVIF_support"><a className={styles.links_learnMore}>learn more</a></Link>

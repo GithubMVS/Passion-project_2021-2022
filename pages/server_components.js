@@ -243,6 +243,13 @@ const server_components = () => {
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Want to try it yourself?</h1>
+          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="https://codesandbox.io/s/suspicious-hofstadter-ek81o"> codeSandbox link</a> </p>
+          <p className={styles.text}>Here is the demo I made on Github: <a href="https://github.com/GithubMVS/nextJS12_serverComponents_demo"> Suspense github link</a> </p>
+          <p className={styles.text}>Here is my full project on github: <a href="https://github.com/GithubMVS/Passion-project_2021-2022"> fullproject github link</a> </p>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>My used resources:</h1>
           <ul className={styles.list}>
             <li className={styles.text_list}>https://www.youtube.com/watch?v=l5J1Gxw2Mh4</li>
