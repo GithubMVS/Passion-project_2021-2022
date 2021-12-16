@@ -24,6 +24,8 @@ import noCssUseJSX_4 from '../public/server_components/fault_3.4.png'
 import not_a_function_1 from '../public/server_components/not_a_function_1.png'
 import not_a_function_2 from '../public/server_components/not_a_function_2.png'
 
+import serverOrClientRendered from '../public/server_components/what_is_server_rendered.png'
+
 
 const server_components = () => {
 
@@ -83,7 +85,13 @@ const server_components = () => {
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>How to do this in nextJS?</h1>
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>1: First upgrade your next project to react18.</p>
+            <p className={styles.steps_text}>1: First upgrade your next project to react18.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>To do this add this to your terminal:</p>
+              <p className={styles.copyThis_text}>{`npm install react@alpha react-dom@alpha`}</p>
+              <p className={styles.copyThis_text}>{` # or`}</p>
+              <p className={styles.copyThis_text}>{`yarn add react@alpha react-dom@alpha`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
@@ -92,6 +100,15 @@ const server_components = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>3: After you’ve done that configure your next.config.js to support react 18.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Your next.config should look like this:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`experimental: {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`serverComponents: true`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`}`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
@@ -100,14 +117,31 @@ const server_components = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>5: Second choose which parts you want to render on te server and which you want to render on the server and which you want to render on the client (on the picture below you can see in red what I rendered on the server and in green what I rendered on the client). Note that everything that requires interactivity is best rendered on the client and everything that requires a lot of datafetching or is heavy like some npm packages is best run on the server, this is optional.</p>
+            <div className={styles.picture_url_imports}><Image src={serverOrClientRendered} alt='serverOrClientRendered' /></div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>6: To render a component on the client just put `.client` after your component, to render a component on the server put `.server` after your component.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Like this:</p>
+              <p className={styles.copyThis_text}>{`test.client.js`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# will make you a client component`}</p>
+              <p className={styles.copyThis_text}>{`test2.server.js`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# will make you a server component`}</p>
+              <p className={styles.copyThis_text}>{`test2.js`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# will depend on if it's a server or client component based on the content`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>7: After you’ve done this just build your project like you normally would do, note that as of December 2021 react server components is really buggy with vanilla css and css modules. I would recommend to use jsx styling to style your page.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Jsx looks like this:</p>
+              <p className={styles.copyThis_text}>{`<div style={{ display: 'flex'}}>`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`<p style={{ color: '#16161E'}}> Please select a recipe</p>`}</p>
+              <p className={styles.copyThis_text}>{`</div>`}</p>
+            </div>
+            <p className={styles.text}>More info about jsx <a href="https://reactjs.org/docs/introducing-jsx.html">here</a> </p>
           </div>
 
           <div className={styles.steps_full}>

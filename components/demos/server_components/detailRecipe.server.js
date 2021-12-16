@@ -18,7 +18,7 @@ const DetailRecipe = ({ selectedId }) => {
           ?
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', flexDirection: 'column' }}>
             <p style={{ color: '#16161E', lineHeight: '6.0rem', fontWeight: '900', fontSize: '5rem', fontFamily: 'Inter, Helvetica, sans-serif, Arial', margin: "0", marginBottom: '3rem' }}>Please select a recipe</p>
-            <p style={{ color: '#9A9A9A', lineHeight: '4.5rem', fontWeight: '300', fontSize: '2.5rem', fontFamily: 'Inter, Helvetica, sans-serif, Arial', width: '50%', textAlign: 'center' }}>This is the serer components demo, the cool part about this demo is that it works both on the client and the server. And the components are carefully selected to render some parts (most of them actually) on the server and some on the client based on what`s best for the user. </p>
+            <p style={{ color: '#9A9A9A', lineHeight: '4.5rem', fontWeight: '300', fontSize: '2.5rem', fontFamily: 'Inter, Helvetica, sans-serif, Arial', width: '50%', textAlign: 'center' }}>This is the server components demo, the cool part about this demo is that it works both on the client and the server. And the components are carefully selected to render some parts (most of them actually) on the server and some on the client based on what`s best for the user. </p>
           </div>
           :
           <div style={{ height: '100%', padding: "0rem 20rem 5rem 20rem", display: 'grid', gridTemplateColumns: "1fr 30%", gridColumnGap: "10rem" }}>
