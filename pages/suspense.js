@@ -182,9 +182,6 @@ const Suspense = () => {
             <p className={styles.steps_text_special}>10: And to show the user that the data is loading you can give the `Suspense` a fallback, which can be text, a loading animation whatever suits your need.</p>
             <div className={styles.picture_url_imports}><Image src={suspense_10} alt='suspense_10' /></div>
           </div>
-
-
-
         </section>
 
 

@@ -83,27 +83,76 @@ const server_components = () => {
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>How to do this in nextJS?</h1>
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>1: Make sure you are on the latest version of nextJS (nextJS12) by installing the latest version of next with yarn or npm:</p>
+            <p className={styles.steps_text_special}>1: First upgrade your next project to react18.</p>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>2: Then chose a CDN you want to use (I used skypack for this demo):</p>
-            <ul className={styles.list}>
-              <li className={styles.text_list}>Skypack</li>
-            </ul>
+            <p className={styles.steps_text}>2: Secondly make sure you’re not using middleware in your project, because as of December 2021 this will bug out and give you an error.</p>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>3: add the allowed URL prefixes inside your next.config.js like below:</p>
+            <p className={styles.steps_text}>3: After you’ve done that configure your next.config.js to support react 18.</p>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>4: Now search for a library on skypack and import it:</p>
+            <p className={styles.steps_text}>4: Then chose a project you want to make that require interactivity, a data fetch and preferably 1 or a couple npm packages (I chose a recipe website where you can see recipes, how to make them and the ingredients).</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>5: Second choose which parts you want to render on te server and which you want to render on the server and which you want to render on the client (on the picture below you can see in red what I rendered on the server and in green what I rendered on the client). Note that everything that requires interactivity is best rendered on the client and everything that requires a lot of datafetching or is heavy like some npm packages is best run on the server, this is optional.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>6: To render a component on the client just put `.client` after your component, to render a component on the server put `.server` after your component.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>7: After you’ve done this just build your project like you normally would do, note that as of December 2021 react server components is really buggy with vanilla css and css modules. I would recommend to use jsx styling to style your page.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>8: Now if you deploy your website locally you will see in the web pack file that there were only client files rendered, a good indicator to know that it also works is that if you go to your installed packages in web pack that every package that is rendered on your server components will not appear because it will render on the server and obviously not on the client.</p>
           </div>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.quote}>`Now you can choose which parts you want to render, and how. Instead of all or nothing.`</h1>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>The demo explained</h1>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>1: In this demo you’ll see what a replica could look like for a recipe site.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>2: You probably want to use a database or headless CMS or something.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>3: If you do it that way your whole page will be rendered on the server. Which is a shame because some things run better/faster on the server and some things run better on the client.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>4: Now that is what server components fixes.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>5: You can chose what you render on the client and what you render on the server.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>6: Now a general rule of thumb is that everything that requires interactivity is best run on the client and everything with data or npm packages is best run on the server because they often have more ram to render those.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>7: In this example I rendered all the data with server components that means, all the recipes, ingredients, recipe details and also ran all the rpm packages on the server and ran all the interactive (the buttons to chose a recipe and the go back button) on the client.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>8:This way my recipe page will load faster and and the user will have a better user experience. </p>
+          </div>
         </section>
 
         <section className={styles.spaceBetweenExplenation}>
