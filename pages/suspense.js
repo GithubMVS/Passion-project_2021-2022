@@ -142,12 +142,7 @@ const Suspense = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>1: In this demo you will see a self made replica of wat an “artikel” could look like.</p>
-            <div className={styles.copyThis}>
-              <p className={styles.copyThis_title}>It would look like this:</p>
-              <p className={styles.copyThis_text}>{`<Suspense fallback={<Animation />}>`}</p>
-              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`<FetchComments />`}</p>
-              <p className={styles.copyThis_text}>{`</Suspense>`}</p>
-            </div>
+            <div className={styles.picture_url_imports}><Image src={suspense_1} alt='suspense_1' /></div>
           </div>
 
           <div className={styles.steps_full}>
@@ -185,7 +180,12 @@ const Suspense = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>10: And to show the user that the data is loading you can give the `Suspense` a fallback, which can be text, a loading animation whatever suits your need.</p>
-            <div className={styles.picture_url_imports}><Image src={suspense} alt='suspense' /></div>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>It would look like this:</p>
+              <p className={styles.copyThis_text}>{`<Suspense fallback={<Animation />}>`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`<FetchComments />`}</p>
+              <p className={styles.copyThis_text}>{`</Suspense>`}</p>
+            </div>
           </div>
         </section>
 
