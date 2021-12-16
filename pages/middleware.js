@@ -22,7 +22,7 @@ const middleware = () => {
         <div className={styles.headerInfo}>
           <h1 className={styles.headerInfo_title}>Middleware</h1>
           <p className={styles.headerInfo_text}>Dit is een korte uitleg daarvan om een idee te krijgen, kan ook quote zijn.</p>
-          <Link href="/demos/middleware_demo"><a className={styles.links_toDemo}>Try out demo</a></Link>
+          <Link href="https://middleware-next-js-12-demo.vercel.app/"><a className={styles.links_toDemo}>Try out demo</a></Link>
         </div>
       </div>
 
@@ -140,6 +140,18 @@ const middleware = () => {
               <li className={styles.text_list}>You can find an empty demo for this <bold><a href="​https://codesandbox.io/s/dazzling-wozniak-imw17">here</a></bold></li>
             </ul>
           </div>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Conclusion</h1>
+          <p className={styles.text}> Middleware is way to intercept a http request and put some of your own code before the user receives that request. This for example makes it possible to make dynamic pages at the speed of static pages. Now Middleware is defenitly a game changer for nextJS while it has a wide range of use cases I believe it will be mostly used for authentication, A/B testing, and things like regional discounts.</p>
+        </section>
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>Want to try it yourself?</h1>
+          <p className={styles.text}>Here is the demo I made in codeSandbox: <a href="https://codesandbox.io/s/kind-scott-xvqtx"> codeSandbox link</a> </p>
+          <p className={styles.text}>Here is the demo I made on Github: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo"> Suspense github link</a> </p>
+          <p className={styles.text}>Here is my full project on github: <a href="https://github.com/GithubMVS/Passion-project_2021-2022"> fullproject github link</a> </p>
         </section>
 
 
