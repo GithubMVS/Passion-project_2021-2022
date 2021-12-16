@@ -146,10 +146,16 @@ const middleware = () => {
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>My used resources:</h1>
           <ul className={styles.list}>
-            <li className={styles.text_list}>https://javascript.plainenglish.io/middleware-in-next-js-12-what-are-they-and-how-to-get-started-with-them-2bce9ae073eb </li>
+            <li className={styles.text_list}>https://javascript.plainenglish.io/middleware-in-next-js-12-what-are-they-and-how-to-get-started-with-them-2bce9ae073eb</li>
             <li className={styles.text_list}>https://nextjs.org/blog/next-12#introducing-middleware</li>
             <li className={styles.text_list}>https://www.youtube.com/watch?v=RaaSmWPmjM0</li>
             <li className={styles.text_list}>https://blog.anishde.dev/middleware-in-nextjs-12-what-are-they-and-how-to-get-started-with-them#comments-list</li>
+            <li className={styles.text_list}>https://www.youtube.com/watch?v=NlBSheYPKkg</li>
+            <li className={styles.text_list}>https://www.youtube.com/watch?v=lRQ5z7i7pxE</li>
+            <li className={styles.text_list}>https://www.youtube.com/watch?v=oZb0skkJbwA</li>
+            <li className={styles.text_list}>${`https://www.youtube.com/watch?v=yuxd2kurpzk&list=PLth-Zs3s81_1GpUyXJBFwxb24dcEMckQp&index=7`}</li>
+            <li className={styles.text_list}>https://dev.to/hunterbecton/middleware-in-next-js-moving-from-express-1bmf</li>
+            <li className={styles.text_list}>https://hackernoon.com/an-intro-to-middleware-in-nextjs-12?source=rsshttps://hackernoon.com/an-intro-to-middleware-in-nextjs-12?source=rss</li>
           </ul>
         </section>
 
