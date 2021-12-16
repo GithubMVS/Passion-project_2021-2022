@@ -14,7 +14,7 @@ import step_6_howTo from '../public/suspense/step_6_howTo.png'
 
 // demo explained
 import suspense_1 from '../public/suspense/suspense_1.png'
-import suspense_7 from '../public/suspense/suspense_7.png'
+import suspense_7 from '../public/suspense/Suspense_7.png'
 
 
 const Suspense = () => {
