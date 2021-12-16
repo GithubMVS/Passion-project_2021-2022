@@ -15,6 +15,7 @@ import url_imports from '../public/homePage/url_imports.png'
 import server_components from '../public/homePage/server_components.png'
 import Suspense from '../public/homePage/Suspense.png'
 import AVIf from '../public/homePage/AVIF_image_format.jpg'
+import middleware from '../public/homePage/middleware_image.png'
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
-              <p>replace with Image here</p>
+              <Image src={middleware} alt="middleware" />
             </div>
           </section>
 

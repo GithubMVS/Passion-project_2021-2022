@@ -14,6 +14,11 @@ import show_react18 from '../public/middleware_pictures/show_react18.png'
 import fault_next_server_sub_directory from '../public/middleware_pictures/fault_next_server_sub_directory.png'
 import fault_sub_directory_middleware from '../public/middleware_pictures/fault_sub_directory_middleware.png'
 
+// how to do this in nextJS
+import middleware_in_sub_directories from '../public/middleware_pictures/middleware_in_sub_directories.png'
+import middleware_not_scoped from '../public/middleware_pictures/middleware_not_scoped.png'
+import middleware_scoped from '../public/middleware_pictures/middleware_scoped.png'
+
 const middleware = () => {
   return (
     <div className={styles.fullExplenation}>
@@ -63,36 +68,88 @@ const middleware = () => {
           </div>
         </section>
 
+
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Middleware explained in 2 sentences</h1>
           <p className={styles.text}>Middleware is code that executes before a request is processed. Depending on the incoming request, you can execute custom logic, rewrite, redirect, add headers and more, before returning a response.</p>
         </section>
 
+
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.quote}>`Dynamic at the speed of static`</h1>
         </section>
 
+
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>How to do this in nextJS?</h1>
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>1: Make sure you are on the latest version of nextJS (nextJS12) by installing the latest version of next with yarn or npm:</p>
+            <p className={styles.steps_text}>1: First off all make sure you are on nextJS version 12</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Like this, with yarn or npm:</p>
+              <p className={styles.copyThis_text}>{`npm install next@12`}</p>
+              <p className={styles.copyThis_text}>{`#or`}</p>
+              <p className={styles.copyThis_text}>{`yarn add next@12`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>2: Then chose a CDN you want to use (I used skypack for this demo):</p>
+            <p className={styles.steps_text}>2: After this make sure that your next.config file is up to date.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Add this to your next.config.js:</p>
+              <p className={styles.copyThis_text}>{`module.exports = {`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`reactStrictMode: true,`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>3: Now we can start. But first of all I want to make a couple things clear:</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>Skypack</li>
+              <li className={styles.text_list}>Middleware is code that runs before a request is done.</li>
+              <li className={styles.text_list}>When putting your middleware in the pages folder it runs on all files including the subirectories.</li>
+              <li className={styles.text_list}>As of December 2021 server components and middleware can’t be on the same project, keep this in mind.</li>
             </ul>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>3: add the allowed URL prefixes inside your next.config.js like below:</p>
+            <p className={styles.steps_text}>4: You can also scope the middleware this way the middleware will only run on the files in your subdirectory like below. (The red rectangles are scoped middleware)</p>
+            <li className={styles.text_list}>Scoped middleware looks like this:</li>
+            <div className={styles.picture_url_imports}><Image src={middleware_in_sub_directories} alt='middleware_in_sub_directories' /></div>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>4: Now search for a library on skypack and import it:</p>
+            <p className={styles.steps_text}>5: So to use Middleware simply add “_middleware” where it needs to be (this can be in a sub directory or just in the pages directory).</p>
+            <li className={styles.text_list}>Middleware in subdirectories looks like this:</li>
+            <div className={styles.picture_url_imports}><Image src={middleware_scoped} alt='middleware_scoped' /></div>
+            <li className={styles.text_list}>Middleware that runs on every page looks like this (for example this also runs on the pages in `demo2`):</li>
+            <div className={styles.picture_url_imports}><Image src={middleware_not_scoped} alt='middleware_not_scoped' /></div>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>6: Now to use middleware in sub directories is still a little buggy but here is a code template where you use to make it work.</p>
+            <li className={styles.text_list}>You can find an empty demo for this <a href="​https://codesandbox.io/s/dazzling-wozniak-imw17">here</a></li>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>7: Here is the default code you need to write (also note that this is in typescript and be aware that there are also other possibilities + you don`t need to call your function `middleware`), also here is the documentation of all the things you can do with middleware.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>The demo code for middleware:</p>
+              <p className={styles.copyThis_text}>{`import { NextRequest, NextResponse } from 'next/server'`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`export async function middleware(req: NextRequest) {`}</p>
+              <p className={styles.copyThis_text}>{`}`}</p>
+            </div>
+            <p className={styles.text}>You can find the documentation: <a href="https://nextjs.org/docs/middleware"> here</a> </p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>8: Now That’s it, now you just need to be creative ;)</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text}>9: The only thing you need to do is write the code (below are is some inspiration example verbal Made and my demo)</p>
           </div>
         </section>
+
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Bonus: What are edge functions</h1>
@@ -102,6 +159,7 @@ const middleware = () => {
           <div className={styles.picture_url_imports}><Image src={explenation_3} alt='explenation_3' /></div>
           <div className={styles.picture_url_imports}><Image src={explenation_4} alt='explenation_4' /></div>
         </section>
+
 
         <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Some good use of Middleware:</h1>
@@ -114,6 +172,15 @@ const middleware = () => {
             <li className={styles.text_list}>Advanced 18n routing</li>
             <li className={styles.text_list}>Logging</li>
           </ul>
+        </section>
+
+
+        <section className={styles.spaceBetweenExplenation}>
+          <h1 className={styles.title}>The demo explained</h1>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>1: </p>
+          </div>
         </section>
 
 
@@ -137,7 +204,7 @@ const middleware = () => {
             <ul className={styles.list}>
               <li className={styles.text_list}>Like the picture below you can see that I had the problem that I couldn`t use next/server in a subdirectory, now that was very weird because on some of the examples Vercel gave on middleware they used next/server in subdirectories. Then it hit me... They probably modified the files to let it work in subdirectories.<Image src={fault_next_server_sub_directory} alt='fault_next_server_sub_directory' /> <br></br><br></br>Now the way I fixed this was that I copied a file where it worked from an example that Vercel gave us, removed all the unnecessary files and replaced them with my own. It shouldn`t always be hard to solve a problem :).</li>
               <br></br>
-              <li className={styles.text_list}>You can find an empty demo for this <bold><a href="​https://codesandbox.io/s/dazzling-wozniak-imw17">here</a></bold></li>
+              <li className={styles.text_list}>You can find an empty demo for this <a href="​https://codesandbox.io/s/dazzling-wozniak-imw17">here</a></li>
             </ul>
           </div>
         </section>
@@ -165,9 +232,10 @@ const middleware = () => {
             <li className={styles.text_list}>https://www.youtube.com/watch?v=NlBSheYPKkg</li>
             <li className={styles.text_list}>https://www.youtube.com/watch?v=lRQ5z7i7pxE</li>
             <li className={styles.text_list}>https://www.youtube.com/watch?v=oZb0skkJbwA</li>
-            <li className={styles.text_list}>${`https://www.youtube.com/watch?v=yuxd2kurpzk&list=PLth-Zs3s81_1GpUyXJBFwxb24dcEMckQp&index=7`}</li>
+            <li className={styles.text_list}>{`https://www.youtube.com/watch?v=yuxd2kurpzk&list=PLth-Zs3s81_1GpUyXJBFwxb24dcEMckQp&index=7`}</li>
             <li className={styles.text_list}>https://dev.to/hunterbecton/middleware-in-next-js-moving-from-express-1bmf</li>
             <li className={styles.text_list}>https://hackernoon.com/an-intro-to-middleware-in-nextjs-12?source=rsshttps://hackernoon.com/an-intro-to-middleware-in-nextjs-12?source=rss</li>
+            <li className={styles.text_list}>https://nextjs.org/docs/middleware</li>
           </ul>
         </section>
 

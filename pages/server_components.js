@@ -25,6 +25,7 @@ import not_a_function_1 from '../public/server_components/not_a_function_1.png'
 import not_a_function_2 from '../public/server_components/not_a_function_2.png'
 
 import serverOrClientRendered from '../public/server_components/what_is_server_rendered.png'
+import webpack_showOff from '../public/server_components/webpack_showOff.png'
 
 
 const server_components = () => {
@@ -145,7 +146,8 @@ const server_components = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>8: Now if you deploy your website locally you will see in the web pack file that there were only client files rendered, a good indicator to know that it also works is that if you go to your installed packages in web pack that every package that is rendered on your server components will not appear because it will render on the server and obviously not on the client.</p>
+            <p className={styles.steps_text}>8: Now if you deploy your website locally you will see in the web pack file that there were only client files rendered, a good indicator to know that it also works is that if you go to your installed packages in web pack that every package that is rendered on your server components will not appear because it will render on the server and obviously not on the client. In my case I use `moment` and `simple-rating-stars` and I also had 2 server components that you won`t see in the components folder</p>
+            <div className={styles.picture_url_imports}><Image src={webpack_showOff} alt='webpack_showOff' /></div>
           </div>
         </section>
 
@@ -161,11 +163,12 @@ const server_components = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>2: You probably want to use a database or headless CMS or something.</p>
+            <p className={styles.steps_text_special}>2: You probably want to use a database or headless CMS or something. I used my own data.</p>
+            <p className={styles.text}>You can find the data: <a href="https://codesandbox.io/s/recursing-star-dmpt1?file=/src/index.js"> here</a> </p>
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>3: If you do it that way your whole page will be rendered on the server. Which is a shame because some things run better/faster on the server and some things run better on the client.</p>
+            <p className={styles.steps_text_special}>3: If you use fetch or axios or another fetching library your whole page will be rendered on the server. Which is a shame because some things run better/faster on the server and some things run better on the client.</p>
           </div>
 
           <div className={styles.steps_full}>
@@ -178,10 +181,25 @@ const server_components = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>6: Now a general rule of thumb is that everything that requires interactivity is best run on the client and everything with data or npm packages is best run on the server because they often have more ram to render those.</p>
+            <div className={styles.copyThis}>
+              <p className={styles.copyThis_title}>Remeber this:</p>
+              <p className={styles.copyThis_text}>{`Use client components when:`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# When you have a lot interactivity.`}</p>
+              <p className={styles.copyThis_text}>{`Use server components when:`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# When you have to fetch a lot of data from a database, headless CMS, ...`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# When dealing with heavy npm packages.`}</p>
+              <p className={styles.copyThis_text}>&nbsp;&nbsp;&nbsp;{`# When there isn't a lot of interactivity.`}</p>
+            </div>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>7: In this example I rendered all the data with server components that means, all the recipes, ingredients, recipe details and also ran all the rpm packages on the server and ran all the interactive (the buttons to chose a recipe and the go back button) on the client.</p>
+            <div className={styles.steps_full}>
+              <p className={styles.text}>Link to moment npm package: <a href="https://www.npmjs.com/package/moment"> here</a> </p>
+              <p className={styles.text}>Link to react-stars npm package: <a href="https://www.npmjs.com/package/simple-rating-stars"> here</a> </p>
+              <p className={styles.text}>Link to my code: <a href="https://github.com/GithubMVS/nextJS12_serverComponents_demo"> here</a> </p>
+            </div>
+
           </div>
 
           <div className={styles.steps_full}>
