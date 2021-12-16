@@ -14,6 +14,7 @@ import step_6_howTo from '../public/suspense/step_6_howTo.png'
 
 // demo explained
 import suspense_1 from '../public/suspense/suspense_1.png'
+import suspense_7 from '../public/suspense/suspense_7.png'
 
 
 const Suspense = () => {
@@ -166,6 +167,7 @@ const Suspense = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>7: Now normally you have a thing called waterfall where in this case, first the artikel would have to load, then the comments would load, then something else, something else, etc…</p>
+            <div className={styles.picture_url_imports}><Image src={suspense_7} alt='suspense_7' /></div>
           </div>
 
           <div className={styles.steps_full}>
