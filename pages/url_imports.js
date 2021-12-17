@@ -85,7 +85,7 @@ const url_imports = () => {
 
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>2: Then chose a CDN you want to use (I used skypack for this demo):</p>
+            <p className={styles.steps_text}>2: Then chose a CDN that serves ES modules (I used skypack for this demo):</p>
             <ul className={styles.list}>
               <li className={styles.text_list}>Skypack</li>
               <li className={styles.text_list}>esm.sh</li>

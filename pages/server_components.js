@@ -248,12 +248,6 @@ const server_components = () => {
 
 
         <section className={styles.spaceBetweenExplenation}>
-          <h1 className={styles.title}>Haven`t we done this before (like with php)?</h1>
-          <p className={styles.text}>...</p>
-        </section>
-
-
-        <section className={styles.spaceBetweenExplenation}>
           <h1 className={styles.title}>Some challenges I faced, and how I fixed them:</h1>
           <div>
             <p className={styles.steps_text}>Fetching data from an api without using state (.fetch is not a function error)</p>
@@ -263,6 +257,7 @@ const server_components = () => {
             <div className={styles.picture_url_imports}><Image src={not_a_function_1} alt='not_a_function_1' /></div>
             <div className={styles.picture_url_imports}><Image src={not_a_function_2} alt='not_a_function_2' /></div>
           </div>
+
 
           <div>
             <p className={styles.steps_text}>Forgetting the import with expermimental of concurrentComponents and serverComponents and adding the react18alpha</p>

@@ -25,7 +25,7 @@ const middleware = () => {
         <Nav />
         <div className={styles.headerInfo}>
           <h1 className={styles.headerInfo_title}>Middleware</h1>
-          <p className={styles.headerInfo_text}>Dit is een korte uitleg daarvan om een idee te krijgen, kan ook quote zijn.</p>
+          <p className={styles.headerInfo_text}>Middleware enables you to use code over configuration. Now you can run code before a request is completed.</p>
           <Link href="https://middleware-next-js-12-demo.vercel.app/"><a className={styles.links_toDemo}>Try out demo</a></Link>
         </div>
       </div>
@@ -143,7 +143,9 @@ const middleware = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text}>9: The only thing you need to do is write the code (below are is some inspiration example verbal Made and my demo)</p>
+            <p className={styles.steps_text}>9: The only thing you need to do is write the code! (below are is some examples of vercel`s middleware and edge functions the code for the demo`s I made.)</p>
+            <p className={styles.text}>Find Vercel`s examples: <a href="https://github.com/vercel/examples/tree/main/edge-functions"> here</a> </p>
+            <p className={styles.text}>Find my code: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo"> here</a> </p>
           </div>
         </section>
 
