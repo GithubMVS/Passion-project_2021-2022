@@ -190,23 +190,22 @@ const middleware = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>4: So first create a folder that contains a `countDown.js` folder. The `countDown.js` is going to be your `fallback` page. Your director should look like this:</p>
-            <p>image here</p>
+            <li className={styles.text_list}> You can copy the folder right: <a href="https://codesandbox.io/s/tender-wind-mdynk?file=/src/App.js">here</a> </li>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>5: Then in the `countDown.js` file in the following code (if you would like to add costum code that’s fine):</p>
-            <p>link here to codesandbox</p>
+            <li className={styles.text_list}>You can find the code <a href="https://codesandbox.io/s/stupefied-brahmagupta-jz9zz?file=/src/copy.js">here</a></li>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>6: If you have done that create a folder named `secret_page` with 2 files inside `demo.js` this could be your webshop with new clothes or discounts, let your imagination flow and `_middleware.ts` This file is to make sure you really can’t access the page before the time is up, your folder should look like this:</p>
-            <p>Image here</p>
-            <li className={styles.text_list}>And you can find the code for that here: <a href="codeSandboxLink here">here</a> </li>
+            <li className={styles.text_list}> You can copy the folder right: <a href="https://codesandbox.io/s/zen-zhukovsky-iz1h2?file=/src/App.js:146-157">here</a> </li>
           </div>
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>7: Now add a new folder called `demo4` with a _middleware.ts and a demo.js file inside the demo.js is just a redirect file so it doesn`t matter what`s inside. The _middleware is for checking if your current time is not over a certain given time. And based on that it will redirect you to the secret page or the fallback page.</p>
-            <li className={styles.text_list}> Your can find the _middleware: <a href="middleware code of demo4 here">here</a> </li>
+            <li className={styles.text_list}> Your can find the _middleware: <a href="https://codesandbox.io/s/bitter-meadow-yi9l5?file=/src/App.js">here</a> </li>
           </div>
 
           <div className={styles.steps_full}>
@@ -221,6 +220,7 @@ const middleware = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text_special}>9: Now one last thing you should do is make a link in your index page linking to the redirect page aka ‘/demo4/demo’.</p>
+            <li className={styles.text_list}> Mine looks like this: <a href="https://codesandbox.io/s/throbbing-resonance-u8o0y?file=/src/copy.js">here</a> </li>
           </div>
 
           <div className={styles.steps_full}>
@@ -228,8 +228,8 @@ const middleware = () => {
           </div>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>11: You can find all the code here:</p>
-            <li className={styles.text_list}> Your can find the code: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo">here</a> </li>
+            <p className={styles.steps_text_special}>11: Again you can find all the code here:</p>
+            <li className={styles.text_list}>The code: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo">here</a> </li>
           </div>
         </section>
 
