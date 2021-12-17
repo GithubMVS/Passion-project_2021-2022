@@ -17,7 +17,6 @@ import fault_sub_directory_middleware from '../public/middleware_pictures/fault_
 // how to do this in nextJS
 import middleware_in_sub_directories from '../public/middleware_pictures/middleware_in_sub_directories.png'
 import middleware_not_scoped from '../public/middleware_pictures/middleware_not_scoped.png'
-import middleware_scoped from '../public/middleware_pictures/middleware_scoped.png'
 
 const middleware = () => {
   return (
@@ -119,9 +118,7 @@ const middleware = () => {
 
           <div className={styles.steps_full}>
             <p className={styles.steps_text}>5: So to use Middleware simply add “_middleware” where it needs to be (this can be in a sub directory or just in the pages directory).</p>
-            <li className={styles.text_list}>Middleware in subdirectories looks like this:</li>
-            <div className={styles.picture_url_imports}><Image src={middleware_scoped} alt='middleware_scoped' /></div>
-            <li className={styles.text_list}>Middleware that runs on every page looks like this (for example this also runs on the pages in `demo2`):</li>
+            <li className={styles.text_list}>Middleware that runs on every page looks like this (for example this also runs on the pages in the folder `demo2`):</li>
             <div className={styles.picture_url_imports}><Image src={middleware_not_scoped} alt='middleware_not_scoped' /></div>
           </div>
 
@@ -179,7 +176,60 @@ const middleware = () => {
           <h1 className={styles.title}>The demo explained</h1>
 
           <div className={styles.steps_full}>
-            <p className={styles.steps_text_special}>1: </p>
+            <p className={styles.steps_text_special}>1: Because you can do so many things with middleware, I prepared 3 demo`s</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>2: In this demo I’ll focus on the demo called `My own small project`</p>
+            <li className={styles.text_list}>You can find the code of all three projects below: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo">here</a> </li>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>3: This demo is quite simple, we all know some sites use a promotion they’ll promise to do in a week or brand new clothes that drop in a month and mostly things like this are paired with a countdown or a date that they set to really hype up their fans or consumers… Now this demo will do exactly that, we”ll create a page that is only accessible after a certain period if it not that period yet then we’ll go to a fallback page.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>4: So first create a folder that contains a `countDown.js` folder. The `countDown.js` is going to be your `fallback` page. Your director should look like this:</p>
+            <p>image here</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>5: Then in the `countDown.js` file in the following code (if you would like to add costum code that’s fine):</p>
+            <p>link here to codesandbox</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>6: If you have done that create a folder named `secret_page` with 2 files inside `demo.js` this could be your webshop with new clothes or discounts, let your imagination flow and `_middleware.ts` This file is to make sure you really can’t access the page before the time is up, your folder should look like this:</p>
+            <p>Image here</p>
+            <li className={styles.text_list}>And you can find the code for that here: <a href="codeSandboxLink here">here</a> </li>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>7: Now add a new folder called `demo4` with a _middleware.ts and a demo.js file inside the demo.js is just a redirect file so it doesn`t matter what`s inside. The _middleware is for checking if your current time is not over a certain given time. And based on that it will redirect you to the secret page or the fallback page.</p>
+            <li className={styles.text_list}> Your can find the _middleware: <a href="middleware code of demo4 here">here</a> </li>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>8: The _middleware of the `demo4` folder explained:</p>
+            <li className={styles.text_list}>We use the `moment` library to get the users current time</li>
+            <li className={styles.text_list}>Than we put it in a variable called `currentime`.</li>
+            <li className={styles.text_list}>After this we create a new variable called `accessTime` were we set a given time where the for example launch should take place.</li>
+            <li className={styles.text_list}>Then we create a variable that compares these 2 variables like this {`(const afterDate = currentTime > accessTime)`} this will result in true or false.</li>
+            <li className={styles.text_list}>If it is true, that means that the time given by you has already passed for the user. And it will send the user to the secret page or the page with the new clothes for example.</li>
+            <li className={styles.text_list}>If it is false it will return the user to the fallback page.</li>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>9: Now one last thing you should do is make a link in your index page linking to the redirect page aka ‘/demo4/demo’.</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>10: Your done!</p>
+          </div>
+
+          <div className={styles.steps_full}>
+            <p className={styles.steps_text_special}>11: You can find all the code here:</p>
+            <li className={styles.text_list}> Your can find the code: <a href="https://github.com/GithubMVS/middleware_nextJS12_demo">here</a> </li>
           </div>
         </section>
 

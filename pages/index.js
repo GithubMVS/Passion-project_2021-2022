@@ -52,7 +52,7 @@ export default function Home() {
               </ul>
               <div className={styles.links}>
                 <Link href="/middleware"><a className={styles.links_learnMore}>learn more</a></Link>
-                <Link href="/demos/middleware_demo"><a className={styles.links_demo}>View demo</a></Link>
+                <Link href="https://middleware-next-js-12-demo.vercel.app/"><a className={styles.links_demo}>View demo</a></Link>
               </div>
             </div>
             <div className={styles.whatsNew__single_image}>
