@@ -286,7 +286,7 @@ const server_components = () => {
           <div>
             <p className={styles.steps_text}>Using css modules or vanilla css in server components error</p>
             <ul className={styles.list}>
-              <li className={styles.text_list}>This one is also pretty simple as of December 2021, while server components are still in alpha, vanilla css and css modules are not supported yet and don`t work when you use them. <span className={styles.special_text}> Now here is how you use css in server components anyway:</span> just use jsx styling in the component itself (like the picture below) this will work fine, both on the localhost as in production. It does look messy but it solves the problem.</li>
+              <li className={styles.text_list}>This one is also pretty simple as of December 2021, while server components are still in alpha, css modules are not supported yet and don`t work when you use them. <span className={styles.special_text}> Now here is how you use css in server components anyway:</span> just use jsx styling in the component itself (like the picture below) this will work fine, both on the localhost as in production. It does look messy but it solves the problem. OR you can use global classic css (like your global.css file or create your own) this is still not perfect, but it is better structured than plain jsx styling, and it makes making your pages responsive easier.</li>
             </ul>
             <li className={styles.text_list_special}>This is doesn`t work:</li>
             <div className={styles.picture_url_imports}><Image src={noCssUseJSX_1} alt='noCssUseJSX_1' /></div>
