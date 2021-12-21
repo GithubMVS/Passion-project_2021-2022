@@ -9,9 +9,9 @@ import { recipes } from '../../../data_server_components/recipes'
 
 const RecipeList = () => {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridColumnGap: '5rem', gridRowGap: "3rem", paddingBottom: "10rem" }}>
+    <div className="selectRecipeFull">
       {recipes.map(recipe => (
-        <div key={recipe.id} style={{ backgroundColor: 'white', borderRadius: '.5rem' }}>
+        <div key={recipe.id} className="selectRecipeFull_color">
           <Recipe {...recipe} />
         </div>
       ))

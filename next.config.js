@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    formats: ['image/avif', 'image/webp']
+  },
   reactStrictMode: true,
   experimental: {
     concurrentFeatures: true,
